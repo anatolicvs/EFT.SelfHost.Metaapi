@@ -1,14 +1,15 @@
-﻿using Microsoft.Owin;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using Microsoft.Owin;
 
-namespace EFT.SelfHost.App
+namespace EFT.Meta.SelfHost.Api
 {
     public class CustomMiddleware : OwinMiddleware
     {
         public CustomMiddleware(OwinMiddleware next) : base(next)
         {
         }
+
         public async override Task Invoke(IOwinContext context)
         {
             context.Response.Headers["MachineName"] = Environment.MachineName;

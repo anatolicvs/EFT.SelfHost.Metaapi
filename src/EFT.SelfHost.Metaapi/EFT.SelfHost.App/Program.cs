@@ -1,14 +1,18 @@
-﻿using Topshelf;
+﻿using System;
+using System.ServiceProcess;
+using Microsoft.Owin.Hosting;
+using Topshelf;
 
-namespace EFT.SelfHost.App
+namespace EFT.Meta.SelfHost.Api
 {
-    public class Program
+    class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
+            StartTopshelf();
         }
 
-        public static void StartTopshelf()
+        static void StartTopshelf()
         {
             HostFactory.Run(x =>
             {
@@ -20,7 +24,7 @@ namespace EFT.SelfHost.App
                 });
                 x.RunAsLocalSystem();
 
-                x.SetDescription("EFT.Clearpoint FX");
+                x.SetDescription("This is a demo of a Windows Service using Topshelf.");
                 x.SetDisplayName("Self Host Meta Trader Api.");
                 x.SetServiceName("EFT.Selfhost.App");
             });

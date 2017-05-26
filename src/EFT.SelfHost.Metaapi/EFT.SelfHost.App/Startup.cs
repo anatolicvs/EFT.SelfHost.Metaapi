@@ -7,23 +7,26 @@ using Microsoft.Owin.StaticFiles;
 using Owin;
 using Nancy;
 
-namespace EFT.SelfHost.App
+namespace EFT.Meta.SelfHost.Api
 {
     public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
-            //adding to the pipline with our own middleware
+            // Adding to the pipeline with our own middleware
             app.Use(async (context, next) =>
             {
-                //add header
-                context.Response.Headers["Product"] = "EFT.SelfHost.MetaApi";
-                //call next middleware
+                // Add Header
+                context.Response.Headers["Product"] = "Web Api Self Host";
+
+                // Call next middleware
                 await next.Invoke();
             });
-
+            
+            // Custom Middleare
             app.Use(typeof(CustomMiddleware));
 
+            // Configure Web API for self-host. 
             var config = new HttpConfiguration();
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
@@ -39,7 +42,7 @@ namespace EFT.SelfHost.App
             {
                 EnableDirectoryBrowsing = true,
                 EnableDefaultFiles = true,
-                DefaultFilesOptions = { DefaultFileNames = { "index.html" } },
+                DefaultFilesOptions = { DefaultFileNames = {"index.html"}},
                 FileSystem = new PhysicalFileSystem("Assets"),
                 StaticFileOptions = { ContentTypeProvider = new CustomContentTypeProvider() }
             };

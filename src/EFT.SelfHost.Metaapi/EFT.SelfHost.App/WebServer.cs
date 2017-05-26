@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using Microsoft.Owin.Hosting;
 
-namespace EFT.SelfHost.App
+namespace EFT.Meta.SelfHost.Api
 {
     public class WebServer
     {
@@ -9,7 +13,7 @@ namespace EFT.SelfHost.App
 
         public void Start()
         {
-            _webapp = WebApp.Start<Startup>("http://localhost:9898");
+            _webapp = WebApp.Start<Startup>("http://localhost:9090");
         }
 
         public void Stop()
