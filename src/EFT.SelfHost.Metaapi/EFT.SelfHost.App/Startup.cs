@@ -23,58 +23,40 @@ namespace EFT.Meta.SelfHost.Api
     {
         public void Configuration(IAppBuilder app)
         {
-
             var builder = new ContainerBuilder();
 
             builder.RegisterType<MongoContext>().AsImplementedInterfaces<MongoContext, ConcreteReflectionActivatorData>().SingleInstance();
-
             builder.RegisterType<AuthRepository>().SingleInstance();
-
             builder.RegisterType<ApplicationIdentityContext>()
                .SingleInstance();
-
             builder.RegisterType<UserStore<User>>()
                 .AsImplementedInterfaces<IUserStore<User>, ConcreteReflectionActivatorData>()
                 .SingleInstance();
-
             builder.RegisterType<RoleStore<Role>>()
                 .AsImplementedInterfaces<IRoleStore<Role>, ConcreteReflectionActivatorData>()
                 .SingleInstance();
-
             builder.RegisterType<ApplicationUserManager>()
                 .SingleInstance();
-
             builder.RegisterType<ApplicationRoleManager>()
                 .SingleInstance();
-
             builder.RegisterType<SimpleAuthorizationServerProvider>()
                 .AsImplementedInterfaces<IOAuthAuthorizationServerProvider, ConcreteReflectionActivatorData>().SingleInstance();
-
             builder.RegisterType<SimpleRefreshTokenProvider>()
                 .AsImplementedInterfaces<IAuthenticationTokenProvider, ConcreteReflectionActivatorData>().SingleInstance();
-
             builder.RegisterApiControllers(typeof(Startup).Assembly);
 
             var container = builder.Build();
-
             app.UseAutofacMiddleware(container);
-
             var webApiDependencyResolver = new AutofacWebApiDependencyResolver(container);
 
-            // Adding to the pipeline with our own middleware
             app.Use(async (context, next) =>
             {
-                // Add Header
                 context.Response.Headers["Product"] = "Web Api Self Host";
-
-                // Call next middleware
                 await next.Invoke();
             });
-            
-            // Custom Middleare
+
             app.Use(typeof(CustomMiddleware));
 
-            // Configure Web API for self-host. 
             var config = new HttpConfiguration();
 
             config.DependencyResolver = webApiDependencyResolver;
@@ -91,10 +73,8 @@ namespace EFT.Meta.SelfHost.Api
 
             app.UseAutofacWebApi(config);
 
-            // Web Api
             app.UseWebApi(config);
 
-            // File Server
             var options = new FileServerOptions
             {
                 EnableDirectoryBrowsing = true,
@@ -106,8 +86,9 @@ namespace EFT.Meta.SelfHost.Api
 
             app.UseFileServer(options);
 
-            // Nancy
             app.UseNancy();
+
+            InitializeData(container);
         }
 
         private void ConfigureOAuth(IAppBuilder app, IContainer container)
@@ -125,6 +106,36 @@ namespace EFT.Meta.SelfHost.Api
             app.UseOAuthAuthorizationServer(OAuthServerOptions);
 
             app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+        }
+
+        private void InitializeData(IContainer container)
+        {
+            var mongoContext = container.Resolve<IMongoContext>();
+
+            if (mongoContext.Clients.Count() == 0)
+            {
+                mongoContext.Clients.Insert(new Client
+                {
+                    Id = "ngAuthApp",
+                    Secret = Helper.GetHash("aytac@eftsoftware.com"),
+                    Name = "AngularJS front-end Application",
+                    ApplicationType = Models.ApplicationTypes.JavaScript,
+                    Active = true,
+                    RefreshTokenLifeTime = 7200,
+                    AllowedOrigin = "*",
+                });
+
+                mongoContext.Clients.Insert(new Client
+                {
+                    Id = "consoleApp",
+                    Secret = Helper.GetHash("aytac@eftsoftware.com"),
+                    Name = "Console Application",
+                    ApplicationType = Models.ApplicationTypes.NativeConfidential,
+                    Active = true,
+                    RefreshTokenLifeTime = 14400,
+                    AllowedOrigin = "*"
+                });
+            }
         }
     }
 }

@@ -240,6 +240,8 @@
     <Compile Include="ApplicationRoleManager.cs" />
     <Compile Include="ApplicationUserManager.cs" />
     <Compile Include="AuthRepository.cs" />
+    <Compile Include="Controller\AccountController.cs" />
+    <Compile Include="Controller\RefreshTokensController.cs" />
     <Compile Include="CustomContentTypeProvider.cs" />
     <Compile Include="CustomMiddleware.cs" />
     <Compile Include="Entities\Client.cs" />
@@ -249,7 +251,7 @@
     <Compile Include="Helper.cs" />
     <Compile Include="IMongoContext.cs" />
     <Compile Include="MetaContainer\MetaContainer.cs" />
-    <Compile Include="MetaController.cs" />
+    <Compile Include="Controller\MetaController.cs" />
     <Compile Include="Models\Enums.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="MongoContext.cs" />

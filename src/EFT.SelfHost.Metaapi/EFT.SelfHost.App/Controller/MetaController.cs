@@ -10,13 +10,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Results;
-using System.Web.Mvc;
 
 namespace EFT.Meta.SelfHost.Api
 {
+    [RoutePrefix("api/Meta")]
     public class MetaController : ApiController
     {
-        [System.Web.Http.Authorize]
+        [Authorize]
         public async Task<IEnumerable<MetaAccount>> GetMetaAccountList()
         {
             using (var scope = MetaContainer.MetaContainer.Initialize().BeginLifetimeScope())

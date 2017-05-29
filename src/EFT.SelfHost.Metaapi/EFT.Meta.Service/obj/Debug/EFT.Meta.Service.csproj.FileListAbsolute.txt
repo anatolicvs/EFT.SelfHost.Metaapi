@@ -48,5 +48,6 @@
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.Meta.Service\bin\Debug\P23.MetaTrader4.Manager.ClrWrapper.xml
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.Meta.Service\bin\Debug\P23.MetaTrader4.Manager.Contracts.xml
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.Meta.Service\bin\Debug\RestSharp.xml
+\\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.Meta.Service\obj\Debug\EFT.Meta.Service.csprojResolveAssemblyReference.cache
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.Meta.Service\obj\Debug\EFT.Meta.Service.dll
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.Meta.Service\obj\Debug\EFT.Meta.Service.pdb
