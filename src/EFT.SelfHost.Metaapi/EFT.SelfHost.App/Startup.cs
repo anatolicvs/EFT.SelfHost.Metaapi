@@ -6,6 +6,8 @@ using Microsoft.Owin.FileSystems;
 using Microsoft.Owin.StaticFiles;
 using Owin;
 using Nancy;
+using Autofac.Core;
+using Autofac.Integration.WebApi;
 
 namespace EFT.Meta.SelfHost.Api
 {
