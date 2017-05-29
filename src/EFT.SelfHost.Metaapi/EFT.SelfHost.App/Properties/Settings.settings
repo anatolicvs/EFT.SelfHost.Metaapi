@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="EFT.Meta.SelfHost.Api.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="AuthContext" Type="System.String" Scope="User">
+      <Value Profile="(Default)">mongodb://35.157.147.38:27017/MetaAuth</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

@@ -16,7 +16,7 @@ namespace EFT.Meta.SelfHost.Api
 {
     public class MetaController : ApiController
     {
-
+        [System.Web.Http.Authorize]
         public async Task<IEnumerable<MetaAccount>> GetMetaAccountList()
         {
             using (var scope = MetaContainer.MetaContainer.Initialize().BeginLifetimeScope())

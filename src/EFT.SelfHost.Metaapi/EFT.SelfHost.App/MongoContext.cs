@@ -23,8 +23,8 @@
 
             ConventionRegistry.Register("CamelCaseConvensions", pack, t => true);
 
-            //todo
-            var mongoUrlBuilder = new MongoUrlBuilder("ConfigurationManager.ConnectionStrings[AuthContext].ConnectionString");
+            
+            var mongoUrlBuilder = new MongoUrlBuilder(Properties.Settings.Default.AuthContext);
 
             var mongoClient = new MongoClient(mongoUrlBuilder.ToMongoUrl());
             var server = mongoClient.GetServer();

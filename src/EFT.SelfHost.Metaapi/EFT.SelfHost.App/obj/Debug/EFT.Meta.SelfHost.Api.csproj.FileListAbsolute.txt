@@ -122,3 +122,8 @@
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\obj\Debug\EFT.Meta.SelfHost.Api.csprojResolveAssemblyReference.cache
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\obj\Debug\EFT.Meta.SelfHost.Api.exe
 \\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\obj\Debug\EFT.Meta.SelfHost.Api.pdb
+\\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Microsoft.Owin.Cors.dll
+\\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+\\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\System.Web.Cors.dll
+\\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Microsoft.Owin.Cors.xml
+\\mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\MongoDB.Driver.Core.xml
