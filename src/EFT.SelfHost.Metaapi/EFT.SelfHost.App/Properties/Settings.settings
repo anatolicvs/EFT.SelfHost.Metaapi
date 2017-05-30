@@ -5,5 +5,8 @@
     <Setting Name="AuthContext" Type="System.String" Scope="User">
       <Value Profile="(Default)">mongodb://35.157.147.38:27017/MetaAuth</Value>
     </Setting>
+    <Setting Name="HostPort" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://35.166.137.107:8686</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

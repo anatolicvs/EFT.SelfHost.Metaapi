@@ -1,0 +1,4784 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>P23.MetaTrader4.Manager.Contracts</name>
+    </assembly>
+    <members>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ActivationType">
+            <summary>
+            Activation type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.SL">
+            <summary>
+            Stop Loss
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.TP">
+            <summary>
+            Take Profit
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.Pending">
+            <summary>
+            Pending order activation
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.Stopout">
+            <summary>
+            Stopout
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.SLRollback">
+            <summary>
+            SL rollback
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.TPRollback">
+            <summary>
+            TP rollback
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.PendingRollback">
+            <summary>
+            Pending rollback
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ActivationType.StopoutRollback">
+            <summary>
+            Stopout rollback
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.BackupInfo">
+            <summary>
+            Object that represents backup information
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.BackupInfo.File">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.BackupInfo.Size">
+            <summary>
+            File size
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.BackupInfo.Time">
+            <summary>
+            File time
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.BackupMode">
+            <summary>
+            Backup mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.BackupMode.All">
+            <summary>
+            All backup
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.BackupMode.Periodical">
+            <summary>
+            Periodical backups
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.BackupMode.Startup">
+            <summary>
+            Backups on startup
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.BackupMode.Delete">
+            <summary>
+            Backups on delete
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.BalanceDiff">
+            <summary>
+            Object that represents balance difference
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.BalanceDiff.Login">
+            <summary>
+            Account number
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.BalanceDiff.Diff">
+            <summary>
+            Difference
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ChartInfo">
+            <summary>
+            Object that represents chart request
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ChartInfo.Symbol">
+            <summary>
+            Symbol
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ChartInfo.Period">
+            <summary>
+            Period (PERIOD_*)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ChartInfo.Start">
+            <summary>
+            Start of chart block
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ChartInfo.End">
+            <summary>
+            End of chart block
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ChartInfo.TimeSign">
+            <summary>
+            Timestamp of existing chart base
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ChartInfo.Mode">
+            <summary>
+            Request mode
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ChartPeriod">
+            <summary>
+            Chart period
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.M1">
+            <summary>
+            One minute
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.M5">
+            <summary>
+            Five minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.M15">
+            <summary>
+            Fifteen minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.M30">
+            <summary>
+            Thirty minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.H1">
+            <summary>
+            One hour
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.H4">
+            <summary>
+            Four hours
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.D1">
+            <summary>
+            One day
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.W1">
+            <summary>
+            One week
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartPeriod.MN1">
+            <summary>
+            One month
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ChartRequestMode">
+            <summary>
+            Chart request mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartRequestMode.RangeIn">
+            <summary>
+            Range in
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartRequestMode.RangeOut">
+            <summary>
+            Range out
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.ChartRequestMode.RangeLast">
+            <summary>
+            Range last
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.OTPMode">
+            <summary>
+            One-Time password mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.OTPMode.Disabled">
+            <summary>
+            Disabled
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.OTPMode.TotpSha256">
+            <summary>
+            Sha256 mode
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AccessActionType">
+            <summary>
+            Access action type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AccessActionType.Block">
+            <summary>
+            Block
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AccessActionType.Permit">
+            <summary>
+            Permit
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupExecutionPeriod">
+            <summary>
+            Archive backup execution period
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupExecutionPeriod.Disabled">
+            <summary>
+            Disabled
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupExecutionPeriod.FiveMinutes">
+            <summary>
+            Five minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupExecutionPeriod.FifteenMin">
+            <summary>
+            Fifteen minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupExecutionPeriod.ThirtyMin">
+            <summary>
+            Thirty minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupExecutionPeriod.OneHour">
+            <summary>
+            One hour
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod">
+            <summary>
+            Archive backup store period
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod.OneDay">
+            <summary>
+            One day
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod.ThreeDays">
+            <summary>
+            Three days
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod.OneWeek">
+            <summary>
+            One week
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod.TwoWeeks">
+            <summary>
+            Two weeks
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod.OneMonth">
+            <summary>
+            One month
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod.ThreeMonth">
+            <summary>
+            Three month
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ArchiveBackupStorePeriod.SixMonth">
+            <summary>
+            Six month
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod">
+            <summary>
+            Auto closeout method
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.HiHi">
+             <summary>
+            High High
+             </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.LoLo">
+            <summary>
+            Low Low
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.HiLo">
+            <summary>
+            High Low
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.LoHi">
+            <summary>
+            Low High
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.FiFo">
+            <summary>
+            First in First out
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.LiFo">
+            <summary>
+            Last in First out
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.AutoCloseOutMethod.IntradayFiFo">
+            <summary>
+            Intraday First in First out
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ClientsTradeRights">
+            <summary>
+            Client trade rights
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ClientsTradeRights.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ClientsTradeRights.CloseBy">
+            <summary>
+            Close by
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ClientsTradeRights.MuCloseBy">
+            <summary>
+            Multiple close by
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.CommissionLotsMode">
+            <summary>
+            Commission lots mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.CommissionLotsMode.PerLot">
+            <summary>
+            Per lot
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.CommissionLotsMode.PerDeal">
+            <summary>
+            Per deal
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.CommissionType">
+            <summary>
+            Commission type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.CommissionType.Money">
+            <summary>
+            Money
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.CommissionType.Pips">
+            <summary>
+            Pips
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.CommissionType.Percent">
+            <summary>
+            Percent
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DataFeedMode">
+            <summary>
+            Data feed mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DataFeedMode.Quotes">
+            <summary>
+            Quotes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DataFeedMode.News">
+            <summary>
+            News
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DataFeedMode.QuotesNews">
+            <summary>
+            Quotes and news
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DealingMode">
+            <summary>
+            Dealing mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DealingMode.ExecutionManual">
+            <summary>
+            Manual execution
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DealingMode.ExecutionAuto">
+            <summary>
+            Auto execution
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DealingMode.ExecutionActivity">
+            <summary>
+            Execution activity
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DemoAccountsType">
+            <summary>
+            Demo account type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DemoAccountsType.Disabled">
+            <summary>
+            Demo accounts disabled
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DemoAccountsType.Prolongatable">
+            <summary>
+            Prolangatable duration
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.DemoAccountsType.Fixed">
+            <summary>
+            Fixed direction
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.EnGatewayAccountFlags">
+            <summary>
+            Gateway account Flags
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.EnGatewayAccountFlags.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.EnGatewayAccountFlags.Quotes">
+            <summary>
+            Quotes
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ExportExecutionPeriod">
+            <summary>
+            Export execution period
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ExportExecutionPeriod.One1Minute">
+            <summary>
+            One minute
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ExportExecutionPeriod.FiveMinutes">
+            <summary>
+            Five minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ExportExecutionPeriod.FifteenMinutes">
+            <summary>
+            Fifteen minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ExportExecutionPeriod.ThirtyMinutes">
+            <summary>
+            Thirty minutes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ExportExecutionPeriod.OneHour">
+            <summary>
+            One hour
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupExecutionPeriod">
+            <summary>
+            Full backup execution period
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupExecutionPeriod.OneHour">
+            <summary>
+            One hour
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupExecutionPeriod.FourHours">
+            <summary>
+            Four hours
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupExecutionPeriod.OneDay">
+            <summary>
+            One day
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupStorePeriod">
+            <summary>
+            Full backup store period
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupStorePeriod.OneMonth">
+            <summary>
+            One month
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupStorePeriod.ThreeMonths">
+            <summary>
+            Three month
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupStorePeriod.SixMonths">
+            <summary>
+            Six month
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.FullBackupStorePeriod.OneYear">
+            <summary>
+            One year
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights">
+            <summary>
+            Group rights
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.Trailing">
+            <summary>
+            Trailing
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.Advisor">
+            <summary>
+            Advisor
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.Expiration">
+            <summary>
+            Expiration
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.SignalsAll">
+            <summary>
+            All signals
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.SignalsOwn">
+            <summary>
+            Own signals
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.RiskWarning">
+            <summary>
+            Risk warning
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GroupRights.AllowFlagForcedOtpUsage">
+            <summary>
+            Forced OTP usage
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GtcMode">
+            <summary>
+            GTC mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GtcMode.Daily">
+            <summary>
+            Daily
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GtcMode.Gtc">
+            <summary>
+            GTC
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.GtcMode.DailyNoStops">
+            <summary>
+            Daily no stops
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateMode.No">
+            <summary>
+            No
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateMode.Release">
+            <summary>
+            Release
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateMode.NoServer">
+            <summary>
+            No server
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateMode.Beta">
+            <summary>
+            Beta
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType">
+            <summary>
+            Live update type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.Client">
+            <summary>
+            Client
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.Manager">
+            <summary>
+            Manager
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.Admin">
+            <summary>
+            Admin
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.Datacenter">
+            <summary>
+            Datacenter
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.ClientPpc2002">
+            <summary>
+            ClientPpc2002
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.ClientPpc2003">
+            <summary>
+            ClientPpc2003
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.Multi">
+            <summary>
+            Multi
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.Wd">
+            <summary>
+            WD
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.ClientPhone">
+            <summary>
+            Client phone
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.LiveUpdateType.Last">
+            <summary>
+            Last
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginCalculationMode">
+            <summary>
+            Margin calculation mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginCalculationMode.DontUse">
+            <summary>
+            Don't use
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginCalculationMode.UseAll">
+            <summary>
+            Use all
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginCalculationMode.UseProfit">
+            <summary>
+            Use profit
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginCalculationMode.UseLoss">
+            <summary>
+            Use loss
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginControllingType">
+            <summary>
+            Margin controlling type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginControllingType.Percent">
+            <summary>
+            Percent
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MarginControllingType.Currency">
+            <summary>
+            Currency
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MonthlyStatementMode">
+            <summary>
+            Monthly statement mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MonthlyStatementMode.EndMonth">
+            <summary>
+            End of month
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.MonthlyStatementMode.StartMonth">
+            <summary>
+            Start of month
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.NewsMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.NewsMode.No">
+            <summary>
+            No
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.NewsMode.Topics">
+            <summary>
+            Topics
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.NewsMode.Full">
+            <summary>
+            Full
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ProfitCalculationMode">
+            <summary>
+            Profit calculation mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ProfitCalculationMode.Forex">
+            <summary>
+            Forex
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ProfitCalculationMode.Cfd">
+            <summary>
+            CFD
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ProfitCalculationMode.Futures">
+            <summary>
+            Futures
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.RolloverMode">
+            <summary>
+            Rollover mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.RolloverMode.Normal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.RolloverMode.ReopenByClosePrice">
+            <summary>
+            Reopen by close price
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.RolloverMode.ReopenByBid">
+            <summary>
+            Reopen by bid
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ServerRole">
+            <summary>
+            Server role
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ServerRole.WatchStandAlone">
+            <summary>
+            Watch stand alone
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ServerRole.WatchMaster">
+            <summary>
+            Watch master
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.ServerRole.WatchSlave">
+            <summary>
+            Watch slave
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.StatementMode">
+            <summary>
+            Statement mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.StatementMode.EndDay">
+            <summary>
+            End day
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.StatementMode.StartDay">
+            <summary>
+            Start day
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SwapType">
+            <summary>
+            Swap type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SwapType.Points">
+            <summary>
+            Points
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SwapType.Dollars">
+            <summary>
+            Dollars
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SwapType.Interest">
+            <summary>
+            Interest
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SwapType.MarginCurrency">
+            <summary>
+            Margin currency
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolExecutionMode">
+            <summary>
+            Symbol execution mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolExecutionMode.Request">
+            <summary>
+            Request
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolExecutionMode.Instant">
+            <summary>
+            Instant
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolExecutionMode.Market">
+            <summary>
+            Market
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolMarginCalculationMode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolMarginCalculationMode.Forex">
+            <summary>
+            Forex
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolMarginCalculationMode.Cfd">
+            <summary>
+            CFD
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolMarginCalculationMode.Futures">
+            <summary>
+            Futures
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolMarginCalculationMode.CfdIndex">
+            <summary>
+            CFD index
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SymbolMarginCalculationMode.CfdLeverage">
+            <summary>
+            CFD leverage
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SynchronizationMode">
+            <summary>
+            Synchronization mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SynchronizationMode.Add">
+            <summary>
+            Add
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SynchronizationMode.Update">
+            <summary>
+            Update
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SynchronizationMode.Insert">
+            <summary>
+            Insert
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SynchronizationMode.Delete">
+            <summary>
+            Delete
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.SynchronizationMode.Last">
+            <summary>
+            Last
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.TradeMode">
+            <summary>
+            Trade mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.TradeMode.No">
+            <summary>
+            Not allowed
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.TradeMode.Close">
+            <summary>
+            Only close allowed
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.Configuration.Enums.TradeMode.Full">
+            <summary>
+            Trade allowed
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Access">
+            <summary>
+            Object that represents access configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Access.Action">
+            <summary>
+            Type of action (FW_BLOCK,FW_PERMIT)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Access.From">
+            <summary>
+            From addresses
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Access.To">
+            <summary>
+            To addresses
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Access.Comment">
+            <summary>
+            Comment
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Backup">
+            <summary>
+            Object that represents backup configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.FullBackupPath">
+            <summary>
+            Path to backup
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.FullBackupPeriod">
+            <summary>
+            Full backup's period-BACKUP_1HOUR, BACKUP_4HOURS, BACKUP_1DAY
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.FullBackupStore">
+            <summary>
+            Full backup's store time-BU_STORE_1MONTH, BU_STORE_3MONTHS, BU_STORE_6MONTHS,BU_STORE_1YEAR
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.FullBackupLastTime">
+            <summary>
+            Full backup's last execution time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.FullBackupShift">
+            <summary>
+            Full backup timeshift in minutes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ExternalPath">
+            <summary>
+            Path to external processing directory
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ArchivePeriod">
+            <summary>
+            Period of archive backup-ARC_BACKUP_5MIN, ARC_BACKUP_15MIN, ARC_BACKUP_30MIN, ARC_BACKUP_1HOUR
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ArchiveStore">
+            <summary>
+            Archive backup's store time-ARC_STORE_1WEEK, ARC_STORE_2WEEKS, ARC_STORE_1MONTH, ARC_STORE_3MONTH, ARC_STORE_6MONTH
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ArchiveLastTime">
+            <summary>
+            Archive backup's last execution time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ExportSecurities">
+            <summary>
+            Comma separated list of exported securities
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ExportPath">
+            <summary>
+            Path to export script
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ExportPeriod">
+            <summary>
+            Export period-enumeration EXPORT_1MIN, EXPORT_5MIN, EXPORT_15MIN, EXPORT_30MIN,EXPORT_1HOUR
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ExportLastTime">
+            <summary>
+            Export's last execution time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchRole">
+            <summary>
+            Server role { WATCH_STAND_ALONE, WATCH_MASTER, WATCH_SLAVE }
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchPassword">
+            <summary>
+            Slave server password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchOpposite">
+            <summary>
+            Opposite server IP address and port
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchIp">
+            <summary>
+            Opposite server IP
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.ArchiveShift">
+            <summary>
+            Shift of archive backup time in minutes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchState">
+            <summary>
+            Watch dog state
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchFailover">
+            <summary>
+            Watch dog failover mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchTimeout">
+            <summary>
+            Watch dog timeout
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchLogin">
+            <summary>
+            Watch dog login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Backup.WatchTimestamp">
+            <summary>
+            Watch dog timestamp
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.FilesConfigurations">
+            <summary>
+            Object that represents files configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.FilesConfigurations.File">
+            <summary>
+            File name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.FilesConfigurations.Size">
+            <summary>
+            File size
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.FilesConfigurations.Hash">
+            <summary>
+            File hash
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount">
+            <summary>
+            Object that represents gateway account configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.Enable">
+            <summary>
+            Enable flag 0 - disabled, 1 - enabled
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.Name">
+            <summary>
+            Public name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.ID">
+            <summary>
+            Internal id
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.Type">
+            <summary>
+            Type (obsolete)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.Login">
+            <summary>
+            STP MT4 login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.Address">
+            <summary>
+            MT4 server address
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.Password">
+            <summary>
+            STP MT4 password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.NotifyLogins">
+            <summary>
+            List of logins for internal email notification
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount.Flags">
+            <summary>
+            Flag fields
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Common">
+            <summary>
+            Object that represents common configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.Owner">
+            <summary>
+            Servers owner (include version and build)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.Name">
+            <summary>
+            Server name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.Address">
+            <summary>
+            IP address assigned to the server
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.Port">
+            <summary>
+            Port
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.Timeout">
+            <summary>
+            Sockets timeout
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.TypeOfDemo">
+            <summary>
+            Demo-accounts type (DEMO_DISABLED, DEMO_PROLONG, DEMO_FIXED)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.TimeOfDemo">
+            <summary>
+            Demo-account living time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.DayLightCorrection">
+            <summary>
+            Allow daylight correction
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.TimeZoneReal">
+            <summary>
+            Time zone with day light mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.TimeZone">
+            <summary>
+            Time zone 0-GMT{get;set;}-1=GMT-1{get;set;}1=GMT+1{get;set;}
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.TimeSync">
+            <summary>
+            Time synchronization server address
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.MinClient">
+            <summary>
+            Minimal authorized client version
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.MinApi">
+            <summary>
+            Minimal authorized client version
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.FeederTimeout">
+            <summary>
+            Data feed switch timeout
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.KeepEmails">
+            <summary>
+            Internal mail keep period
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.EndHour">
+            <summary>
+            End of day time-hour
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.EndMinute">
+            <summary>
+            End of day time-minute
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.OptimizationTime">
+            <summary>
+            Optimization start time (minutes)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.OptimizationLastTime">
+            <summary>
+            Optimization last time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.OptimizationCounter">
+            <summary>
+            Internal variable   
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.AntiFlood">
+            <summary>
+            Enable antiflood control
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.FloodControl">
+            <summary>
+            Max. antiflood connections
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.LiveUpdateMode">
+            <summary>
+            LiveUpdate mode (LIVE_UPDATE_NO,LIVE_UPDATE_ALL,LIVE_UPDATE_NO_SERVER)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.LastOrder">
+            <summary>
+            Last order's ticket (read only)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.LastLogin">
+            <summary>
+            Last account's number (read only)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.LostLogin">
+            <summary>
+            Lost commission's login (read only)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.RolloversMode">
+            <summary>
+            Rollover mode (ROLLOVER_NORMAL,ROLLOVER_REOPEN_BY_CLOSE_PRICE,ROLLOVER_REOPEN_BY_BID)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.PathDatabase">
+            <summary>
+            Path to databases
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.PathHistory">
+            <summary>
+            Path to history bases
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.PathLog">
+            <summary>
+            Path to log
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.OverNightLastDay">
+            <summary>
+            Day of last overnight
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.OverNightLastTime">
+            <summary>
+            Time of last overnight
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.OverNightPrevTime">
+            <summary>
+            Time of next to last overnight
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.OverMonthLastMonth">
+            <summary>
+            Month of last report
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.Adapters">
+            <summary>
+            Network adapters list (read-only)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.BindAdresses">
+            <summary>
+            Array of avaible IP addresses
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.ServerVersion">
+            <summary>
+            Server version
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.ServerBuild">
+            <summary>
+            Server build
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.WebAdresses">
+            <summary>
+            Web services access list (comma separated IP addresses)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.StatementMode">
+            <summary>
+            Statement generation time (STATEMENT_END_DAY,STATEMENT_START_DAY)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.MonthlyStateMode">
+            <summary>
+            Monthly statement generation day (MONTHLY_STATEMENT_END_MONTH,MONTHLY_STATEMENT_START_MONTH)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.KeepTicks">
+            <summary>
+            Ticks keep period
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.StatementWeekend">
+            <summary>
+            Generate statements at weekends
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.LastActivate">
+            <summary>
+            Last activation Datetime
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.StopLast">
+            <summary>
+            Last stop Datetime
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.StopDelay">
+            <summary>
+            Last stop delay
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.StopReason">
+            <summary>
+            Last stop reason
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Common.AccountUrl">
+            <summary>
+            Account allocation URL
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup">
+            <summary>
+            Object that represents gateway markup configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup.Enable">
+            <summary>
+            Enable flag 0 - disabled, 1 - enabled
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup.Source">
+            <summary>
+            Source symbol\symbols mask\symbols group name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup.Symbol">
+            <summary>
+            Local symbol name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup.AccountName">
+            <summary>
+            Account name (obsolete)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup.AccountID">
+            <summary>
+            Account internal id (obsolete)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup.BidMarkup">
+            <summary>
+            Bid markup in pips
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup.AskMarkup">
+            <summary>
+            Ask markup in pips
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule">
+            <summary>
+            Object that represents gateway rule configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.Enable">
+            <summary>
+            Enable flag 0 - disabled, 1 - enabled
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.Name">
+            <summary>
+            Public name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.RequestSymbol">
+            <summary>
+            Symbol\symbols mask\symbols group name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.RequestGroup">
+            <summary>
+            Group name or group mask
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeAccountName">
+            <summary>
+            Account name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeAccountID">
+            <summary>
+            Account internal id
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeMaxDeviation">
+            <summary>
+            Max. devation
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeMaxProfitSlippage">
+            <summary>
+            Max profit slippage in pips
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeMaxProfitSlippageLots">
+            <summary>
+            Max profit slippage volume in lots
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeMaxLosingSlippage">
+            <summary>
+            Max losing slippage in pips
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeMaxLosingSlippageLots">
+            <summary>
+            Max losing slippage volume in lots
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeAccountPos">
+            <summary>
+            Account current position
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule.ExeVolumePercent">
+            <summary>
+            Coverage percentage
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer">
+            <summary>
+            Object that represents data server configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer.Server">
+            <summary>
+            Server address (server:ip)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer.Ip">
+            <summary>
+            Server IP
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer.Description">
+            <summary>
+            Server description
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer.IsProxy">
+            <summary>
+            Can server be proxy?
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer.Priority">
+            <summary>
+            Priority: 0-7 base, 255-idle
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer.Loading">
+            <summary>
+            Server loading (UINT_MAX-server does not inform its loading)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.DataServer.IpInternal">
+            <summary>
+            Internal IP address   
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder">
+            <summary>
+            Object that represents feeder configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.File">
+            <summary>
+            DataFeed filename
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Server">
+            <summary>
+            Server address
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Login">
+            <summary>
+            DataFeed login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Pass">
+            <summary>
+            DataFeed password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Keywords">
+            <summary>
+            Keywords (news filtration)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Enable">
+            <summary>
+            Enable feeder
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Mode">
+            <summary>
+            Datafeed mode-enumeration FEED_QUOTES, FEED_NEWS, FEED_QUOTESNEWS
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.Timeout">
+            <summary>
+            Max. freeze time (default ~120 sec.)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.TimeoutReconnect">
+            <summary>
+            Reconnect timeout before attemps_sleep connect attempts (default ~ 5  sec)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.TimeoutSleep">
+            <summary>
+            Reconnect timeout after attemps_sleep connect attempts  (default ~ 60 sec)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.AttempsSleep">
+            <summary>
+            Reconnect count (see timeout_reconnect and timeout_sleep)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Feeder.NewsLangId">
+            <summary>
+            News language id
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Group">
+            <summary>
+            Object that represents group configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Name">
+            <summary>
+            Group name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Enable">
+            <summary>
+            Enable group
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Timeout">
+            <summary>
+            Trade confirmation timeout (seconds)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.OtpMode">
+            <summary>
+            One-time password mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Company">
+            <summary>
+            Company name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Signature">
+            <summary>
+            Statements signature
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SupportPage">
+            <summary>
+            Company support page
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SmtpServer">
+            <summary>
+            Statements SMTP server
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SmtpLogin">
+            <summary>
+            Statements SMTP login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SmtpPassword">
+            <summary>
+            Statements SMTP password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SupportEmail">
+            <summary>
+            Support email
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Templates">
+            <summary>
+            Path to directory with custom templates
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Copies">
+            <summary>
+            Copy statements on support email
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Reports">
+            <summary>
+            Enable statements
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.DefaultLeverage">
+            <summary>
+            Default leverage (user don't specify leverage himself)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.DefaultDeposit">
+            <summary>
+            Default deposit  (user don't specify balance  himself)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.MaxSecurities">
+            <summary>
+            Maximum simultaneous securities
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SecGroups">
+            <summary>
+            Security group settings
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SecMargins">
+            <summary>
+            Special securities settings
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.SecMarginsTotal">
+            <summary>
+            Count of special securities settings
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Currency">
+            <summary>
+            Deposit currency
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Credit">
+            <summary>
+            Virtual credit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.MarginCall">
+            <summary>
+            Margin call level (percents)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.MarginMode">
+            <summary>
+            Margin mode-MARGIN_DONT_USE,MARGIN_USE_ALL,MARGIN_USE_PROFIT,MARGIN_USE_LOSS
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.MarginStopout">
+            <summary>
+            Stop out level
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.InterestRate">
+            <summary>
+            Annual interest rate (percents)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.UseSwap">
+            <summary>
+            Use rollovers and interestrate
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.News">
+            <summary>
+            News mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.Rights">
+            <summary>
+            Rights bit mask-ALLOW_FLAG_EMAIL
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.CheckIePrices">
+            <summary>
+            Check IE prices on requests
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.MaxPositions">
+            <summary>
+            Maximum orders and open positions
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.CloseReopen">
+            <summary>
+            Partial close mode (if !=0 original position will be fully closed and remain position will be fully reopened)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.HedgeProhibited">
+            <summary>
+            Hedge prohibition flag
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.CloseFifo">
+            <summary>
+            Fifo rule 
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.HedgeLargeLeg">
+            <summary>
+            Use large leg margin for hedged positions    
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.MarginType">
+            <summary>
+            Margin controlling type { MARGIN_TYPE_PERCENT,  MARGIN_TYPE_CURRENCY }
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.ArchivePeriod">
+            <summary>
+            Inactivity period after which account moves to archive base (in days)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.ArchiveMaxBalance">
+            <summary>
+            Maxumum balance of accounts to move in archive base
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.StopOutSkipHedged">
+            <summary>
+            Skip fully hedged accounts when checking for stopout
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.ArchivePendingPeriod">
+            <summary>
+            Pendings clean period
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Group.NewsLanguages">
+            <summary>
+            LANGID array
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.GroupMargin">
+            <summary>
+            Object that represents group margin configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupMargin.Symbol">
+            <summary>
+            Security
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupMargin.SwapLong">
+            <summary>
+            Swap size for long positions
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupMargin.SwapShort">
+            <summary>
+            /// <summary>
+            Swap size for short positions
+            </summary>
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupMargin.MarginDivider">
+            <summary>
+            Margin divider
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity">
+            <summary>
+            Object that represents group security configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.Show">
+            <summary>
+            Enable show for this group of securites
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.Trade">
+            <summary>
+            Enable for this group of securites
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.Execution">
+            <summary>
+            Dealing mode-EXECUTION_MANUAL,EXECUTION_AUTO,EXECUTION_ACTIVITY
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.CommBase">
+            <summary>
+            Standart commission
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.CommType">
+            <summary>
+            Commission type-COMM_TYPE_MONEY,COMM_TYPE_PIPS,COMM_TYPE_PERCENT
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.CommLots">
+            <summary>
+            Commission lots mode-COMMISSION_PER_LOT,COMMISSION_PER_DEAL
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.CommAgent">
+            <summary>
+            Agent commission
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.CommAgentType">
+            <summary>
+            Agent commission mode-COMM_TYPE_MONEY, COMM_TYPE_PIPS
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.SpreadDiff">
+            <summary>
+            Spread difference in compare with default security spread
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.LotMin">
+            <summary>
+            Allowed minimal lot values
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.LotMax">
+            <summary>
+            Allowed maximal lot values
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.LotStep">
+            <summary>
+            Allowed step value (10 lot-1000, 1 lot-100, 0.1 lot-10)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.IeDeviation">
+            <summary>
+            Maximum price deviation in Instant Execution mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.Confirmation">
+            <summary>
+            Use confirmation in Request mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.TradeRights">
+            <summary>
+            Clients trade rights-bit mask see TRADE_DENY_NONE,TRADE_DENY_CLOSEBY,TRADE_DENY_MUCLOSEBY
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.IeQuickMode">
+            <summary>
+            Do not resend request to the dealer when client uses deviation
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.AutoCloseOutMode">
+            <summary>
+            Auto close-out method { CLOSE_OUT_NONE, CLOSE_OUT_HIHI, CLOSE_OUT_LOLO, CLOSE_OUT_HILO, CLOSE_OUT_LOHI, CLOSE_OUT_LOHI, CLOSE_OUT_FIFO, CLOSE_OUT_LIFO, CLOSE_OUT_INTRDAY_FIFO }
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.CommTax">
+            <summary>
+            Commission taxes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.CommAgentLots">
+            <summary>
+            Agent commission per lot/per deal { COMMISSION_PER_LOT,COMMISSION_PER_DEAL }
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.GroupSecurity.FreeMarginMode">
+            <summary>
+            "soft" margin check
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday">
+            <summary>
+            Object that represents holidays configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.Year">
+            <summary>
+            year
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.Month">
+            <summary>
+            Month
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.Day">
+            <summary>
+            Day
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.From">
+            <summary>
+            Work time-from (minutes)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.To">
+            <summary>
+            Work time-to (minutes)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.Symbol">
+            <summary>
+            Security name or symbol's group name or "All"
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Holiday.Enable">
+            <summary>
+            Enable
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate">
+            <summary>
+            Object that represents live updates configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Company">
+            <summary>
+            Company
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Path">
+            <summary>
+            Path to LiveUpdate
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Version">
+            <summary>
+            Version
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Build">
+            <summary>
+            Build
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.MaxConnect">
+            <summary>
+            Max. simultaneous connections
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Connections">
+            <summary>
+            Current connections (read only)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Type">
+            <summary>
+            Type LIVE_UPDATE_*
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Enable">
+            <summary>
+            Enable
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate.Files">
+            <summary>
+            Files configurations
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Manager">
+            <summary>
+            Object that represents manager configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Login">
+            <summary>
+            Login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.ManagerRights">
+            <summary>
+            Right to add and change client records
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Money">
+            <summary>
+            Right to balance and credit management
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Online">
+            <summary>
+            Right to see online users
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Riskman">
+            <summary>
+            Right to use analyzer
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Broker">
+            <summary>
+            Right to deal
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Admin">
+            <summary>
+            Right to server administration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Logs">
+            <summary>
+            Right to see logs
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Reports">
+            <summary>
+            Right to see reports
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Trades">
+            <summary>
+            Right to add/modify/delete trades
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.MarketWatch">
+            <summary>
+            Right to change spread, spread balance, stop levels, execution mode and send quotes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Email">
+            <summary>
+            Right to send internal mail
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.UserDetails">
+            <summary>
+            Right to see clients private data-name,country,address,phone,email etc.
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.SeeTrades">
+            <summary>
+            Right to see trades
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.News">
+            <summary>
+            Right to send news
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Plugins">
+            <summary>
+            Right to configure plugins
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.ServerReports">
+            <summary>
+            Right to receive server reports
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.TechSupport">
+            <summary>
+            Right to access to technical support page
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Market">
+            <summary>
+            Right to access server applications Market
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Notifications">
+            <summary>
+            Right to push Notifications
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.IpFilter">
+            <summary>
+            Enable IP control
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.IpFrom">
+            <summary>
+            range of allowed IPs
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.IpTo">
+            <summary>
+            range of allowed IPs
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Mailbox">
+            <summary>
+            Name of mailbox for internal mail
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Groups">
+            <summary>
+            Comma separated list of managed groups (allowed '*' wildcard)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.SecGroups">
+            <summary>
+            Manager rights for security groups
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.Name">
+            <summary>
+            Manager name (read only)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Manager.InfoDepth">
+            <summary>
+            Maximum available data (in days)
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.ManagerSecurity">
+            <summary>
+            Object that represents manager security configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.ManagerSecurity.Enable">
+            <summary>
+            Enable
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.ManagerSecurity.MinimumLots">
+            <summary>
+            Min. lots
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.ManagerSecurity.MaximumLots">
+            <summary>
+            Max. lots
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Plugin">
+            <summary>
+            Object that represents plugin configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Plugin.File">
+            <summary>
+            Plugin file name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Plugin.Info">
+            <summary>
+            Plugin description
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Plugin.Enabled">
+            <summary>
+            Plugin enabled/disabled
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Plugin.Configurable">
+            <summary>
+            Is plugin configurable
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Plugin.ManagerAccess">
+            <summary>
+            Plugin can be accessed from manager terminal
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.PluginConfigurationParameter">
+            <summary>
+            Object that represents plugin parameter configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.PluginConfigurationParameter.Name">
+            <summary>
+            parameter name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.PluginConfigurationParameter.Value">
+            <summary>
+            Parameter value
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.PluginInformation">
+            <summary>
+            Object that represents plugin information configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.PluginInformation.Name">
+            <summary>
+            Plugin name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.PluginInformation.Version">
+            <summary>
+            Plugin version
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.PluginInformation.Copyright">
+            <summary>
+            Plugin copyright
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.PluginWithParameters">
+            <summary>
+            Object that represents plugin with parameters configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.PluginWithParameters.Plugin">
+            <summary>
+            Plugin configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.PluginWithParameters.Parameters">
+            <summary>
+            Plugin parameters
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Session">
+            <summary>
+            Object that represents session configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Session.OpenHour">
+            <summary>
+            Session open  time: hour
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Session.OpenMin">
+            <summary>
+            Session open  time: minute
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Session.CloseHour">
+            <summary>
+            Session close time: hour
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Session.CloseMin">
+            <summary>
+            Session close time: minute
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Sessions">
+            <summary>
+            Object that represents sessions configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Sessions.Quote">
+            <summary>
+            Quote sessions
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Sessions.Trade">
+            <summary>
+            Trade sessions
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol">
+            <summary>
+            Object that represents symbol configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Description">
+            <summary>
+            Description
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Source">
+            <summary>
+            Synonym
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Currency">
+            <summary>
+            Currency
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Type">
+            <summary>
+            Security group (see SymbolGroup)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Digits">
+            <summary>
+            Security precision
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Trade">
+            <summary>
+            Trade mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.BackgroundColor">
+            <summary>
+            Background color
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Count">
+            <summary>
+            Symbols index
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.CountOriginal">
+            <summary>
+            Symbols index in Market watch
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.RealTime">
+            <summary> 
+            Allow real time quotes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Starting">
+            <summary>
+            Trades starting date (UNIX time)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Expiration">
+            <summary>
+            Trades end date      (UNIX time)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Sessions">
+            <summary>
+            Quote and trade sessions
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.ProfitMode">
+            <summary>
+            Profit calculation mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Filter">
+            <summary>
+            Filter value
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.FilterCounter">
+            <summary>
+            Filtration parameter
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.FilterLimit">
+            <summary>
+            Max. permissible deviation from last quote (percents)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.FilterSmoothing">
+            <summary>
+            Smoothing
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Logging">
+            <summary>
+            Enable to log quotes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Spread">
+            <summary>
+            Spread
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SpreadBalance">
+            <summary>
+            Spread balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Exemode">
+            <summary>
+            Execution mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SwapEnable">
+            <summary>
+            Enable swaps
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SwapType">
+            <summary>
+            Swap type
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SwapLong">
+            <summary>
+            Swaps values for long postions
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SwapShort">
+            <summary>
+            Swaps values for short postions
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SwapRollover3Days">
+            <summary>
+            Triple rollover day-0-Monday,1-Tuesday...4-Friday
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.ContractSize">
+            <summary>
+            Contract size
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.TickValue">
+            <summary>
+            One tick value
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.TickSize">
+            <summary>
+            One tick size
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.StopsLevel">
+            <summary>
+            Stops deviation value
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.GtcPendings">
+            <summary>
+            GTC mode { ORDERS_DAILY, ORDERS_GTC, ORDERS_DAILY_NO_STOPS }
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.MarginMode">
+            <summary>
+            Margin calculation mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.MarginInitial">
+            <summary>
+            Initial margin
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.MarginMaintenance">
+            <summary>
+            Margin maintenance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.MarginHedged">
+            <summary>
+            Hadged margin
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.MarginDivider">
+            <summary>
+            Margin divider
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Point">
+            <summary>
+            Point size-(1/(10^digits)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.Multiply">
+            <summary>
+            Multiply 10^digits
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.BidTickValue">
+            <summary>
+            Tick value for bid
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.AskTickValue">
+            <summary>
+            Tick value for ask
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.LongOnly">
+            <summary>
+            Allow only BUY positions
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.InstantMaxVolume">
+            <summary>
+            Max. volume for Instant Execution
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.MarginCurrency">
+            <summary>
+            Currency of margin requirments
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.FreezeLevel">
+            <summary>
+            Modification freeze level
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.MarginHedgedStrong">
+            <summary>
+            Strong hedged margin mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.ValueDate">
+            <summary>
+            Value date
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.QuotesDelay">
+            <summary>
+            Quotes delay after session start
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SwapOpenPrice">
+            <summary>
+            Use open price at swaps calculation in SWAP_BY_INTEREST mode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Symbol.SwapVariationMargin">
+            <summary>
+            Charge variation margin on rollover
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.SymbolGroup">
+            <summary>
+            Object that represents symbol group configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.SymbolGroup.Name">
+            <summary>
+            Group name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.SymbolGroup.Description">
+            <summary>
+            Group description
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization">
+            <summary>
+            Object that represents synchronization configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.Server">
+            <summary>
+            Name (address)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.UnusedPort">
+            <summary>
+            Port
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.Login">
+            <summary>
+            For future use-login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.Password">
+            <summary>
+            For future use=password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.Enable">
+            <summary>
+            Enable sychronization
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.Mode">
+            <summary>
+            Synchronization mode: HB_ADD,HB_UPDATE,HB_INSERT
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.From">
+            <summary>
+            Synchronization range (0-whole chart)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.To">
+            <summary>
+            Synchronization range (0-whole chart)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.Securities">
+            <summary>
+            Symbols list
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization.TimeCorrection">
+            <summary>
+            Time correction in minutes
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.Configuration.Time">
+            <summary>
+            Object that represents time configuration
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.Configuration.Time.Days">
+            <summary>
+            Server's accessebility (7 days-24 hours, 0-denied, 1-allowed)
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.EnNewsFlags">
+            <summary>
+            News topic Flags
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnNewsFlags.Priority">
+            <summary>
+            Priority flag
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnNewsFlags.Calendar">
+            <summary>
+            Calendar item flag
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnNewsFlags.Mime">
+            <summary>
+            Mime news content
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnNewsFlags.AllowDemo">
+            <summary>
+            Allow Body for demo accounts
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.EnReqFlags">
+            <summary>
+            Trade request flags
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnReqFlags.None">
+            <summary>
+            No flags
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnReqFlags.Signal">
+            <summary>
+            Placed by signal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnReqFlags.Expert">
+            <summary>
+            Placed by expert
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnReqFlags.Gateway">
+            <summary>
+            Placed by gateway
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnReqFlags.Mobile">
+            <summary>
+            Placed by mobile terminal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnReqFlags.Web">
+            <summary>
+            Placed by web terminal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.EnReqFlags.Api">
+            <summary>
+            Placed by api
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.FeederModes">
+            <summary>
+            Feeder mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.FeederModes.OnlyQuotes">
+            <summary>
+            Only quotes
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.FeederModes.OnlyNews">
+            <summary>
+            Only news
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.FeederModes.QuotesAndNews">
+            <summary>
+            Quotes and news
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.FeederModes.QuotesOrNews">
+            <summary>
+            Quotes or news
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.DailyGroupRequest">
+            <summary>
+            Object that represents daily group request
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyGroupRequest.Name">
+            <summary>
+            Group name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyGroupRequest.From">
+            <summary>
+            From
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyGroupRequest.To">
+            <summary>
+            To
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.DailyReport">
+            <summary>
+            Object that represents daily report
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Login">
+            <summary>
+            login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Ctm">
+            <summary>
+            Time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Group">
+            <summary>
+            Group
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Bank">
+            <summary>
+            Bank
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.BalancePrev">
+            <summary>
+            Previous balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Balance">
+            <summary>
+            Balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Deposit">
+            <summary>
+            Deposit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Credit">
+            <summary>
+            Credit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.ProfitClosed">
+            <summary>
+            Closed profit/loss
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Profit">
+            <summary>
+            Floating profit/loss
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Equity">
+            <summary>
+            Equity
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.Margin">
+            <summary>
+            Used margin
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.DailyReport.MarginFree">
+            <summary>
+            Free margin
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ExposureValue">
+            <summary>
+            Object that represents exposure value
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ExposureValue.Currency">
+            <summary>
+            Currency
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ExposureValue.Clients">
+            <summary>
+            Clients volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ExposureValue.Coverage">
+            <summary>
+            Coverage volume
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.FeedDescription">
+            <summary>
+            Object that represents feed description
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Version">
+            <summary>
+            Data source version
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Name">
+            <summary>
+            Data source name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Copyright">
+            <summary>
+            Copyright string
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Web">
+            <summary>
+            Data source web
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Email">
+            <summary>
+            Data source email
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Server">
+            <summary>
+            Feeder server
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.UserName">
+            <summary>
+            Default feeder name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.UserPass">
+            <summary>
+            Default feeder password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Modes">
+            <summary>
+            Feeder modes (enum FeederModes)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Description">
+            <summary>
+            Feeder description
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.FeedDescription.Module">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.GroupCommandInfo">
+            <summary>
+            Object that represents group command
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.GroupCommandInfo.Len">
+            <summary>
+            Length of users list
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.GroupCommandInfo.Command">
+            <summary>
+            Group coommand
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.GroupCommandInfo.NewGroup">
+            <summary>
+            New group
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.GroupCommandInfo.Leverage">
+            <summary>
+            New leverage
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ConnectionParameters">
+            <summary>
+            Object that represents connection parameters
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ConnectionParameters.Login">
+            <summary>
+            Login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ConnectionParameters.Server">
+            <summary>
+            Server (ip:port)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ConnectionParameters.Password">
+            <summary>
+            Password
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.GroupCommands">
+            <summary>
+            Group operation command type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.GroupCommands.Delete">
+            <summary>
+            Delete users
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.GroupCommands.Enable">
+            <summary>
+            Enable users
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.GroupCommands.Disable">
+            <summary>
+            Disable users
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.GroupCommands.Leverage">
+            <summary>
+            Change leverage
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.GroupCommands.SetGroup">
+            <summary>
+            Set group
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.MailBox">
+            <summary>
+            Object that represents mailbox
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.Time">
+            <summary>
+            Receive time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.Sender">
+            <summary>
+            Mail sender (login)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.From">
+            <summary>
+            Mail sender (name)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.To">
+            <summary>
+            Mail recipient
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.Subject">
+            <summary>
+            Mail sumbect
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.Readed">
+            <summary>
+            Readed flag
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.Body">
+            <summary>
+            Pointer to mail Body
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.BodyLen">
+            <summary>
+            Mail Body length
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.BuildMin">
+            <summary>
+            Minimum build
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MailBox.BuildMax">
+            <summary>
+            Maximum build
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.MarginLevel">
+            <summary>
+            Object that represents margin level
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Login">
+            <summary>
+            User login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Group">
+            <summary>
+            User group
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Leverage">
+            <summary>
+            User leverage
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Updated">
+            <summary>
+            (internal)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Balance">
+            <summary>
+            Balance + Credit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Equity">
+            <summary>
+            Equity
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Volume">
+            <summary>
+            Lots
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Margin">
+            <summary>
+            Margin requirements
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.MarginFree">
+            <summary>
+            Free margin
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.Level">
+            <summary>
+            Margin level
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.MarginType">
+            <summary>
+            Margin controlling type (percent/currency)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MarginLevel.LevelType">
+            <summary>
+            Level type(ok/margincall/stopout)
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.MarginLevelType">
+            <summary>
+            Margin level type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.MarginLevelType.Ok">
+            <summary>
+            OK
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.MarginLevelType.MarginCall">
+            <summary>
+            Margin call
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.MarginLevelType.StopOut">
+            <summary>
+            Stop Out
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.MetaTraderException">
+            <summary>
+            Exception which thrown whenever problems occurs during API call
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.MetaTraderException.ErrorCode">
+            <summary>
+            Error code returned by API
+            </summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.Contracts.MetaTraderException.#ctor">
+            <summary>
+            Ctor to istantiante exception
+            </summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.Contracts.MetaTraderException.#ctor(System.String)">
+            <summary>
+            Ctor to istantiante exception
+            </summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.Contracts.MetaTraderException.#ctor(System.String,System.Exception)">
+            <summary>
+            Ctor to istantiante exception
+            </summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.Contracts.MetaTraderException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Ctor to istantiante exception
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.NewsTopic">
+            <summary>
+            Object that represents news topic
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Key">
+            <summary>
+            News key
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Time">
+            <summary>
+            News time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Ctm">
+            <summary>
+            News source time ("yyyy/mm/dd hh:mm:ss")
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Topic">
+            <summary>
+            News topic
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Category">
+            <summary>
+            News Category
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Keywords">
+            <summary>
+            News keywords
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Body">
+            <summary>
+            Body (if present)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.BodyLen">
+            <summary>
+            Body length
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Readed">
+            <summary>
+            Readed flag
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.Priority">
+            <summary>
+            News priority: 0-general, 1-high
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopic.LangId">
+            <summary>
+            News LANGID
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.NewsTopicNew">
+            <summary>
+            New news topic class
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.Key">
+            <summary>
+            News key
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.Language">
+            <summary>
+            News language (WinAPI LANGID)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.Subject">
+            <summary>
+            News subject
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.Category">
+            <summary>
+            News category
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.Flags">
+            <summary>
+            EnNewsFlags
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.Body">
+            <summary>
+            News body
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.LanguagesList">
+            <summary>
+            List of languages available for news
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.NewsTopicNew.DateTime">
+            <summary>
+            News time
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.OnlineRecord">
+            <summary>
+            Object that represents online record
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.OnlineRecord.Counter">
+            <summary>
+            Connections counter
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.OnlineRecord.Login">
+            <summary>
+            User login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.OnlineRecord.Ip">
+            <summary>
+            Connection ip address
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.OnlineRecord.Group">
+            <summary>
+            User group
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.PerformanceInfo">
+            <summary>
+            Object that represents performance information
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.PerformanceInfo.Ctm">
+            <summary>
+            Time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.PerformanceInfo.Users">
+            <summary>
+            Online users
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.PerformanceInfo.Cpu">
+            <summary>
+            Processor loading (%)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.PerformanceInfo.FreeMem">
+            <summary>
+            Free memory (Kb)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.PerformanceInfo.Network">
+            <summary>
+            Network activity (Kb/s)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.PerformanceInfo.Sockets">
+            <summary>
+            All open sockets in system
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.PumpingMode">
+            <summary>
+            Pumping Mode Flags to be used
+            when calling PumpingSwitchEx method
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.Default">
+            <summary>
+            No flags
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.HideTicks">
+            <summary>
+            do not send ticks
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.HideNews">
+            <summary>
+            do not send news
+            </summary>     
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.HideMail">
+            <summary>
+            do not send mails
+            </summary> 
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.SendFullNews">
+            <summary>
+            send news body with news header in pumping mode
+            </summary> 
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.Reserved">
+            <summary>
+            reserved
+            </summary> 
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.HideOnline">
+            <summary>
+            do not send online users table
+            </summary> 
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingMode.HideUsers">
+            <summary>
+            do not send users table
+            </summary> 
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes">
+            <summary>
+            Pumping notification codes send in Pumping Mode
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Start">
+            <summary>
+            Pumping started
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Symbols">
+            <summary>
+            Update symbols
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Groups">
+            <summary>
+            Update groups
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Users">
+            <summary>
+            Update users
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Online">
+            <summary>
+            Update online users
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.BidAsk">
+            <summary>
+            Update bid/ask
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.News">
+            <summary>
+            Update news
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.NewsBody">
+            <summary>
+            Update news body
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Mail">
+            <summary>
+            Update mails
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Trades">
+            <summary>
+            Update trades
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Requests">
+            <summary>
+            Update trade requests
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Plugins">
+            <summary>
+            Update server plugins
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Activation">
+            <summary>
+            New order for activation (sl/sp/stopout)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Margincall">
+            <summary>
+            New margin calls
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Stop">
+            <summary>
+            Pumping stopped
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.Ping">
+            <summary>
+            Ping
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.PumpingNotificationCodes.NewsNew">
+            <summary>
+            Update news in new format (NewsTopicNew structure)
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.RateInfo">
+            <summary>
+            Object that represents bar/candle
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RateInfo.Ctm">
+            <summary>
+            Rate time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RateInfo.Open">
+            <summary>
+            Open price: 11987=119.87
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RateInfo.High">
+            <summary>
+            High shift from open
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RateInfo.Low">
+            <summary>
+            Low shift from open
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RateInfo.Close">
+            <summary>
+            Close shift from open
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RateInfo.Vol">
+            <summary>
+            Volume
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ReportGroupRequest">
+            <summary>
+            Object that represents report group request
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ReportGroupRequest.Name">
+            <summary>
+            Request group name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ReportGroupRequest.From">
+            <summary>
+            From
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ReportGroupRequest.To">
+            <summary>
+            To
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.RequestInfo">
+            <summary>
+            Object that represents request info
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Id">
+            <summary>
+            Request id
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Status">
+            <summary>
+            Request status
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Time">
+            <summary>
+            Request time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Manager">
+            <summary>
+            Manager processing request (if any)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Login">
+            <summary>
+            User login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Group">
+            <summary>
+            User group
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Balance">
+            <summary>
+            User balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Credit">
+            <summary>
+            User credit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Prices">
+            <summary>
+            Bid/Ask
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.Trade">
+            <summary>
+            Trade transaction
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.GwVolume">
+            <summary>
+            Gateway order volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.GwOrder">
+            <summary>
+            Gateway order ticket
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.RequestInfo.GwPrice">
+            <summary>
+            Gateway order price deviation (pips) from request price
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ServerFeed">
+            <summary>
+            Object that represents server feed
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ServerFeed.File">
+            <summary>
+            Feeder file name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ServerFeed.Feed">
+            <summary>
+            Feeder description
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.ServerLog">
+            <summary>
+            Object that represents server log
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ServerLog.Code">
+            <summary>
+            Code
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ServerLog.Time">
+            <summary>
+            Time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ServerLog.Ip">
+            <summary>
+            IP
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.ServerLog.Message">
+            <summary>
+            Message
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.SymbolInfo">
+            <summary>
+            Object that represents symbol info
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Symbol">
+            <summary>
+            Symbol name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Digits">
+            <summary>
+            Floating point digits
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Count">
+            <summary>
+            Symbol counter
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Visible">
+            <summary>
+            Visibility
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Type">
+            <summary>
+            Symbol type (symbols group index)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Point">
+            <summary>
+            Symbol point=1/pow(10,digits)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Spread">
+            <summary>
+            Symbol spread
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.SpreadBalance">
+            <summary>
+            Spread balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Direction">
+            <summary>
+            Direction
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.UpdateFlag">
+            <summary>
+            Update flag
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.LastTime">
+            <summary>
+            Last tick time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Bid">
+            <summary>
+            Bid
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Ask">
+            <summary>
+            Ask
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.High">
+            <summary>
+            High
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Low">
+            <summary>
+            Low
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.Commission">
+            <summary>
+            Commission
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolInfo.CommType">
+            <summary>
+            Commission type  
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.SymbolPriceDirection">
+            <summary>
+            Symbol price direction
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.SymbolPriceDirection.Up">
+            <summary>
+            Up
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.SymbolPriceDirection.Down">
+            <summary>
+            Done
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.SymbolPriceDirection.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.SymbolProperties">
+            <summary>
+            Object that represents symbol properties
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolProperties.Symbol">
+            <summary>
+            Symbol
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolProperties.Color">
+            <summary>
+            Symbol color
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolProperties.Spread">
+            <summary>
+            Symbol spread
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolProperties.SpreadBalance">
+            <summary>
+            Spread balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolProperties.StopsLevel">
+            <summary>
+            Stops level
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolProperties.Smoothing">
+            <summary>
+            Smoothing
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolProperties.Exemode">
+            <summary>
+            Execution mode
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.SymbolSummary">
+            <summary>
+            Object that represents symbol summary
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.Symbol">
+            <summary>
+            Symbol
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.Count">
+            <summary>
+            Symbol counter
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.Digits">
+            <summary>
+            Floating point digits
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.Type">
+            <summary>
+            Symbol type (symbol group index)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.Orders">
+            <summary>
+            Number of client orders
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.BuyLots">
+            <summary>
+            Buy volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.SellLots">
+            <summary>
+            Sell volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.BuyPrice">
+            <summary>
+            Average buy price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.SellPrice">
+            <summary>
+            Average sell price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.Profit">
+            <summary>
+            Clients profit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.CovOrders">
+            <summary>
+            Number of coverage orders
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.CovBuyLots">
+            <summary>
+            Buy volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.CovSellLots">
+            <summary>
+            Sell volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.CovBuyPrice">
+            <summary>
+            Average buy price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.CovSellPrice">
+            <summary>
+            Average sell price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.SymbolSummary.CovProfit">
+            <summary>
+            Coverage profit
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TickInfo">
+            <summary>
+            Object that represents tick info
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickInfo.Symbol">
+            <summary>
+            Symbol
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickInfo.Ctm">
+            <summary>
+            Tick time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickInfo.Bid">
+            <summary>
+            Bid
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickInfo.Ask">
+            <summary>
+            Ask
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TickRecord">
+            <summary>
+            Object that represents tick record
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRecord.Ctm">
+            <summary>
+            Tick time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRecord.Bid">
+            <summary>
+            Bid
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRecord.Ask">
+            <summary>
+            Ask
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRecord.DataFeed">
+            <summary>
+            Index if datafeed
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRecord.Flags">
+            <summary>
+            TICK_FLAG_* Flags
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TickRecordFlags">
+            <summary>
+            Tick record flag
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TickRecordFlags.Raw">
+            <summary>
+            Raw
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TickRecordFlags.Normal">
+            <summary>
+            Normal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TickRecordFlags.All">
+            <summary>
+            All
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TickRequest">
+            <summary>
+            Object that represents tick request
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRequest.Symbol">
+            <summary>
+            Symbol
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRequest.From">
+            <summary>
+            Start of period
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRequest.To">
+            <summary>
+            End of period
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TickRequest.Flags">
+            <summary>
+            TICK_FLAG_* Flags
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeCommand">
+            <summary>
+            Trade command type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.Buy">
+            <summary>
+            Buy
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.Sell">
+            <summary>
+            Sell
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.BuyLimit">
+            <summary>
+            Buy limit
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.SellLimit">
+            <summary>
+            Sell limit
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.BuyStop">
+            <summary>
+            Buy stop
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.SellStop">
+            <summary>
+            Sell stop
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.Balance">
+            <summary>
+            Balance
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeCommand.Credit">
+            <summary>
+            Credit
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeReason">
+            <summary>
+            Trade reason
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.Client">
+            <summary>
+            Client
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.Expert">
+            <summary>
+            Expert
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.Dealer">
+            <summary>
+            Dealer
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.Signal">
+            <summary>
+            Signal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.Gateway">
+            <summary>
+            Gateway
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.Mobile">
+            <summary>
+            Mobile terminal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.Web">
+            <summary>
+            Web terminal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeReason.API">
+            <summary>
+            API
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeRecord">
+            <summary>
+            Object that represents trade record
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Order">
+            <summary>
+            Order ticket
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Login">
+            <summary>
+            Owner's login
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Symbol">
+            <summary>
+            Security
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Digits">
+            <summary>
+            Security precision
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Cmd">
+            <summary>
+            Trade command
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Volume">
+            <summary>
+            Volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.OpenTime">
+            <summary>
+            Open time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.State">
+            <summary>
+            Reserved
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.OpenPrice">
+            <summary>
+            Open price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Sl">
+            <summary>
+            Stop loss
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Tp">
+            <summary>
+            Take profit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.CloseTime">
+            <summary>
+            Close time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.GwVolume">
+            <summary>
+            Gateway order volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Expiration">
+            <summary>
+            Pending order's expiration time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Reason">
+            <summary>
+            Trade reason
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.ConvRates">
+            <summary>
+            Convertation rates from profit currency to group deposit currency
+            (first element-for open time, second element-for close time)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Commission">
+            <summary>
+            Commission
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.CommissionAgent">
+            <summary>
+            Agent commission
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Storage">
+            <summary>
+            Order swaps
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.ClosePrice">
+            <summary>
+            Close price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Profit">
+            <summary>
+            Profit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Taxes">
+            <summary>
+            Taxes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Magic">
+            <summary>
+            Special value used by client experts
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Comment">
+            <summary>
+            Comment
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.GwOrder">
+            <summary>
+            Gateway order ticket
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Activation">
+            <summary>
+            used by MT Manager
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.GwOpenPrice">
+            <summary>
+            Gateway order price deviation (pips) from order open price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.GwClosePrice">
+            <summary>
+            Gateway order price deviation (pips) from order close price
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.MarginRate">
+            <summary>
+            Margin convertation rate (rate of convertation from margin currency to deposit one)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.Timestamp">
+            <summary>
+            Timestamp when traderecord was requested
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRecord.ApiData">
+            <summary>
+            This field stores user data of Manager API
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeRequestStatus">
+            <summary>
+            Trade request status
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeRequestStatus.Empty">
+            <summary>
+            Empty
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeRequestStatus.Request">
+            <summary>
+            Request
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeRequestStatus.Locked">
+            <summary>
+            Locked
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeRequestStatus.Answered">
+            <summary>
+            Answered
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeRequestStatus.Reseted">
+            <summary>
+            Reseted
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeRequestStatus.Canceled">
+            <summary>
+            Cancelled
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeRestoreResult">
+            <summary>
+            Object that represents trade restore result
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRestoreResult.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeRestoreResult.Res">
+            <summary>
+            Restore result:
+            RET_OK_NONE     - order restored
+            RET_ERROR       - error restoring order
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeState">
+            <summary>
+            Trade state
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeState.OpenNormal">
+            <summary>
+            Open normal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeState.OpenRemand">
+            <summary>
+            Open remand
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeState.OpenRestored">
+            <summary>
+            Open restored
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeState.ClosedNormal">
+            <summary>
+            Close normal
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeState.ClosedPart">
+            <summary>
+            Closed part
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeState.ClosedBy">
+            <summary>
+            Closed by
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeState.Deleted">
+            <summary>
+            Deleted
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeTransactionType">
+            <summary>
+            Trade transaction type
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.PricesGet">
+            <summary>
+            Prices requets
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.PricesRequote">
+            <summary>
+            Requote
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderIeOpen">
+            <summary>
+            Open order (Instant Execution)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderReqOpen">
+            <summary>
+            Open order (Request Execution)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderMkOpen">
+            <summary>
+            Open order (Market Execution)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderPendingOpen">
+            <summary>
+            Open pending order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderIeClose">
+            <summary>
+            Close order (Instant Execution)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderReqClose">
+            <summary>
+            Close order (Request Execution)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderMkClose">
+            <summary>
+            Close order (Market Execution)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderModify">
+            <summary>
+            Modify pending order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderDelete">
+            <summary>
+            Delete pending order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderCloseBy">
+            <summary>
+            Close order by order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.OrderCloseAll">
+            <summary>
+            Close all orders by symbol
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderOpen">
+            <summary>
+            Open order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderClose">
+            <summary>
+            Close order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderDelete">
+            <summary>
+            Delete order (ANY OPEN ORDER!!!)
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderCloseBy">
+            <summary>
+            Close order by order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderCloseAll">
+            <summary>
+            Close all orders by symbol
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderModify">
+            <summary>
+            Modify open price, stoploss, takeprofit etc. of order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderActivate">
+            <summary>
+            Activate pending order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrOrderComment">
+            <summary>
+            Modify comment of order
+            </summary>
+        </member>
+        <member name="F:P23.MetaTrader4.Manager.Contracts.TradeTransactionType.BrBalance">
+            <summary>
+            Balance credit
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.TradeTransInfo">
+            <summary>
+            Object that represents trade transaction info
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Type">
+            <summary>
+            Trade transaction type
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Flags">
+            <summary>
+            Trade request flags
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Cmd">
+            <summary>
+            Trade command
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Order">
+            <summary>
+            Order
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.OrderBy">
+            <summary>
+            Login, in case of closing with opposite second order ticket
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Symbol">
+            <summary>
+            Trade symbol
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Volume">
+            <summary>
+            Trade volume
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Price">
+            <summary>
+            Trade price(open, close), amount to deposit in case of balance operation
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Sl">
+            <summary>
+            Stop Loss
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Tp">
+            <summary>
+            Take Profit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.IeDeviation">
+            <summary>
+            Deviation on IE
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Comment">
+            <summary>
+            Comment
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Expiration">
+            <summary>
+            Pending order expiration time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.TradeTransInfo.Crc">
+            <summary>
+            Crc
+            </summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.Contracts.UserRecord">
+            <summary>
+            Object that represents user record
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Login">
+            <summary>
+            Account number
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Group">
+            <summary>
+            Group user belongs to
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Password">
+            <summary>
+            User password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Enable">
+            <summary>
+            Enable
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.EnableChangePassword">
+            <summary>
+            Allow to change password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.EnableReadOnly">
+            <summary>
+            Allow to open/positions (1 - may not trade)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.EnableOTP">
+            <summary>
+            Allow to use one-time password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.PasswordInvestor">
+            <summary>
+            Read-only mode password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.PasswordPhone">
+            <summary>
+            Phone password
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Name">
+            <summary>
+            Name
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Country">
+            <summary>
+            Country
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.City">
+            <summary>
+            City
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.State">
+            <summary>
+            State
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.ZipCode">
+            <summary>
+            ZipCode, PostCode
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Address">
+            <summary>
+            Address
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.LeadSource">
+            <summary>
+            lead source
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Phone">
+            <summary>
+            Phone
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Email">
+            <summary>
+            Email
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Comment">
+            <summary>
+            Comment
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Id">
+            <summary>
+            SSN (IRD)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Status">
+            <summary>
+            Status
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Regdate">
+            <summary>
+            Registration date
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.LastDate">
+            <summary>
+            Last coonection time
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Leverage">
+            <summary>
+            Leverage
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.AgentAccount">
+            <summary>
+            Agent account
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Timestamp">
+            <summary>
+            Timestamp wher UserRecord was requested
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.LastIp">
+            <summary>
+            Last visit ip
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Balance">
+            <summary>
+            Balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.PrevMonthBalance">
+            <summary>
+            Previous month balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.PrevBalance">
+            <summary>
+            Previous day balance
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Credit">
+            <summary>
+            Credit
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.InterestRate">
+            <summary>
+            Accumulated interest rate
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Taxes">
+            <summary>
+            Taxes
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.PrevMonthEquity">
+            <summary>
+            Previous month equity
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.PrevEquity">
+            <summary>
+            Previous day equity
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.PublicKey">
+            <summary>
+            Public key
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.SendReports">
+            <summary>
+            Enable send reports by email
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.OTPSecret">
+            <summary>
+            One-time password secret
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.Mqid">
+            <summary>
+            MQ client identificator
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.UserColor">
+            <summary>
+            Color got to client (used by MT Manager)
+            </summary>
+        </member>
+        <member name="P:P23.MetaTrader4.Manager.Contracts.UserRecord.ApiData">
+            <summary>
+            This field stores user data of Manager API
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -34,5 +34,17 @@ namespace EFT.Meta.SelfHost.Api.Properties {
                 this["AuthContext"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://35.166.137.107:8686")]
+        public string HostPort {
+            get {
+                return ((string)(this["HostPort"]));
+            }
+            set {
+                this["HostPort"] = value;
+            }
+        }
     }
 }

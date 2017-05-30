@@ -1,0 +1,1240 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        "P23.MetaTrader4.Manager.ClrWrapper"
+    </assembly>
+    <members>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NotificationsSend(System.Collections.Generic.List`1{System.Int32},System.String)">
+            <summary>
+Send push notification
+</summary>
+            <param name="logins">logins</param>
+            <param name="message">notification message</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NotificationsSend(System.String,System.String)">
+            <summary>
+Send push notification
+</summary>
+            <param name="metaquotesIds">metaquotes ids</param>
+            <param name="message">notification message</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.AdmBalanceCheck(System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Check balance for provided accounts
+</summary>
+            <param name="logins">logins</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftGatewayRule(System.Int32,System.Int32)">
+            <summary>
+Shift position of gateway rule configuration
+</summary>
+            <param name="pos">position of configuration to be shifted</param>
+            <param name="shift">shift value</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftGatewayMarkup(System.Int32,System.Int32)">
+            <summary>
+Shift position of gateway markup configuration
+</summary>
+            <param name="pos">position of configuration to be shifted</param>
+            <param name="shift">shift value</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftGatewayAccount(System.Int32,System.Int32)">
+            <summary>
+Shift position of gateway account configuration
+</summary>
+            <param name="pos">position of configuration to be shifted</param>
+            <param name="shift">shift value</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteGatewayRule(System.Int32)">
+            <summary>
+Delete gateway rule configuration
+</summary>
+            <param name="pos">position of configuration to be deleted</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteGatewayMarkup(System.Int32)">
+            <summary>
+Delete gateway markup configuration
+</summary>
+            <param name="pos">position of configuration to be deleted</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteGatewayAccount(System.Int32)">
+            <summary>
+Delete gateway account configuration
+</summary>
+            <param name="pos">position of configuration to be deleted</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateGatewayRule(P23.MetaTrader4.Manager.Contracts.Configuration.GatewayRule)">
+            <summary>
+Update gateway rule configuration
+</summary>
+            <param name="cfg">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateGatewayMarkup(P23.MetaTrader4.Manager.Contracts.Configuration.GatewayMarkup)">
+            <summary>
+Update gateway markup configuration
+</summary>
+            <param name="cfg">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateGatewayAccount(P23.MetaTrader4.Manager.Contracts.Configuration.GatewayAccount)">
+            <summary>
+Update gateway account configuration
+</summary>
+            <param name="cfg">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestGatewayRule">
+            <summary>
+Request gateway rule configurations
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestGatewayMarkup">
+            <summary>
+Request gateway markup configurations
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestGatewayAccount">
+            <summary>
+Request gateway account configurations
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.LicenseCheck(System.String)">
+            <summary>
+Check license status
+</summary>
+            <param name="licenseName">license name</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.LogsMode(System.Int32)">
+            <summary>
+Logs Mode
+</summary>
+            <param name="mode">mode</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.LogsOut(System.Int32,System.String,System.String)">
+            <summary>
+Logs Out
+</summary>
+            <param name="code">code</param>
+            <param name="source">source</param>
+            <param name="msg">msg</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ManagerCommon(P23.MetaTrader4.Manager.Contracts.Configuration.Common)">
+            <summary>
+Get common parameters
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BytesReceived">
+            <summary>
+Get bytes received
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BytesSent">
+            <summary>
+Get bytes sent
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolChange(P23.MetaTrader4.Manager.Contracts.SymbolProperties)">
+            <summary>
+Change symbol properties
+</summary>
+            <param name="prop">new values</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradeCalcProfit(P23.MetaTrader4.Manager.Contracts.TradeRecord)">
+            <summary>
+Calculate profit for trade in pumping mode
+</summary>
+            <param name="trade">trade parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DailySyncRead">
+            <summary>
+Internal use
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DailySyncStart(System.UInt32)">
+            <summary>
+Internal use
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesSnapshot">
+            <summary>
+Internal use
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesSyncRead">
+            <summary>
+Internal use
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesSyncStart(System.UInt32)">
+            <summary>
+Internal use
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UsersSnapshot">
+            <summary>
+Internal use
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UsersSyncRead">
+            <summary>
+Internal use
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UsersSyncStart(System.UInt32)">
+            <summary>
+Internal use
+</summary>
+            <param name="timestamp">timestamp</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.PumpingSwitchEx(P23.MetaTrader4.Manager.Contracts.PumpingMode)">
+            <summary>
+Switch into extended pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TicksRequest(P23.MetaTrader4.Manager.Contracts.TickRequest)">
+            <summary>
+Request ticks from MT server
+</summary>
+            <param name="request">request parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ChartDelete(System.String,System.Int32,System.Collections.Generic.IList`1{P23.MetaTrader4.Manager.Contracts.RateInfo})">
+            <summary>
+Delete chart data
+</summary>
+            <param name="symbol">symbol</param>
+            <param name="period">period</param>
+            <param name="rates">data to remove</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ChartUpdate(System.String,System.Int32,System.Collections.Generic.IList`1{P23.MetaTrader4.Manager.Contracts.RateInfo})">
+            <summary>
+Update chart data, bars will be added if missing
+</summary>
+            <param name="symbol">symbol</param>
+            <param name="period">period</param>
+            <param name="rates">data to add</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ChartAdd(System.String,System.Int32,System.Collections.Generic.IList`1{P23.MetaTrader4.Manager.Contracts.RateInfo})">
+            <summary>
+Add chart data, bars won't be overriden if exist
+</summary>
+            <param name="symbol">symbol</param>
+            <param name="period">period</param>
+            <param name="rates">data to add</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ChartRequest(P23.MetaTrader4.Manager.Contracts.ChartInfo,System.UInt32@)">
+            <summary>
+Request chart data
+</summary>
+            <param name="chart">request parameters</param>
+            <param name="timesign">timesign</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.HistoryCorrect(System.String,System.Int32@)">
+            <summary>
+Correct history
+</summary>
+            <param name="symbol">symbol</param>
+            <param name="updated">updated</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.HistoryCorrect(System.String)">
+            <summary>
+Correct history
+</summary>
+            <param name="symbol">symbol</param>
+            <param name="updated">updated</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.MarginLevelRequest(System.Int32)">
+            <summary>
+Get margin level
+</summary>
+            <param name="login">login</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ExposureValueGet(System.String)">
+            <summary>
+Get company's exposure for specific currency in pumping mode
+</summary>
+            <param name="cur">currency</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ExposureGet">
+            <summary>
+Get company's exposure for currencies in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SummaryCurrency(System.String,System.Int32)">
+            <summary>
+Get summary currency
+</summary>
+            <param name="cur">currency</param>
+            <param name="maxchars">maxchars</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SummaryGetByType(System.Int32)">
+            <summary>
+Get trade summary for specific security type in pumping mode
+</summary>
+            <param name="sectype">security type</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SummaryGetByCount(System.Int32)">
+            <summary>
+Get trade summary for specific count in pumping mode
+</summary>
+            <param name="count">count</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SummaryGet(System.String)">
+            <summary>
+Get trade summary for specific symbol in pumping mode
+</summary>
+            <param name="symbol">symbol</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SummaryGetAll">
+            <summary>
+Get trade summary for all symbols in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.MailsRequest">
+            <summary>
+Get last mails of internal mail system
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ServerTime">
+            <summary>
+Get server time
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolsGroupsGet">
+            <summary>
+Get settings of securities groups in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TickInfoLast(System.String)">
+            <summary>
+Get list of updated quotes in pumping mode
+</summary>
+            <param name="symbol">symbol</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DealerReset(System.Int32)">
+            <summary>
+Send dealer request to queue in dealer mode
+</summary>
+            <param name="id">request id</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DealerReject(System.Int32)">
+            <summary>
+Reject dealer request in dealer mode
+</summary>
+            <param name="id">request id</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DealerSend(P23.MetaTrader4.Manager.Contracts.RequestInfo,System.Int32,System.Int32)">
+            <summary>
+Send confirm or requote message for specific request in dealer mode
+</summary>
+            <param name="info">request</param>
+            <param name="requote">flag: 0 - confirm, 1 - requote</param>
+            <param name="mode">mode</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DealerRequestGet">
+            <summary>
+Get requests in dealer mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DealerSwitch(P23.MetaTrader4.Manager.PumpingCallbackDelegate)">
+            <summary>
+Switch into dealer mode
+</summary>
+            <param name="callBackDelegate">delegate which will be incoked on dealing event</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NewsBodyGet(System.Int32)">
+            <summary>
+Get news for specific key in pumping mode
+</summary>
+            <param name="key">news key</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NewsBodyRequest(System.Int32)">
+            <summary>
+Request news for specific key
+</summary>
+            <param name="key">news key</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NewsTopicGet(System.Int32)">
+            <summary>
+Get news for specific position in pumping mode
+</summary>
+            <param name="position">news position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NewsTotal">
+            <summary>
+Get total number of income news in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NewsGet">
+            <summary>
+Get heading of income news in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.MailLast(System.String,System.Int32)">
+            <summary>
+Get file path of last mail in pumping mode
+</summary>
+            <param name="path">path</param>
+            <param name="length">length</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.PluginParamGet(System.Int32)">
+            <summary>
+Get installed plugin in pumping mode
+</summary>
+            <param name="position">position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.PluginsGet">
+            <summary>
+Get list of installed plugins in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.RequestInfoGet(System.Int32)">
+            <summary>
+Get trade request in pumping mode
+</summary>
+            <param name="position">position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.RequestsGet">
+            <summary>
+Get list of trade requests in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.MarginLevelGet(System.Int32,System.String,P23.MetaTrader4.Manager.Contracts.MarginLevel@)">
+            <summary>
+Get margin requirement of account in pumping mode
+</summary>
+            <param name="login">login</param>
+            <param name="group">user group</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.MarginLevelGet(System.Int32,System.String)">
+            <summary>
+Get margin requirement of account in pumping mode
+</summary>
+            <param name="login">login</param>
+            <param name="group">user group</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.MarginsGet">
+            <summary>
+Get list of margin requirements of accounts in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradeClearRollback(System.Int32)">
+            <summary>
+Clear activation flag
+</summary>
+            <param name="order">order</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradeRecordGet(System.Int32)">
+            <summary>
+Get open trade in pumping mode
+</summary>
+            <param name="order">order</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesGetByMarket">
+            <summary>
+Returns orders most proximate to the market like in last list of dealing tab in MT Manager terminal 
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesGetByLogin(System.Int32,System.String)">
+            <summary>
+Get all open trades for specific login in pumping mode
+</summary>
+            <param name="login">login</param>
+            <param name="group">user group</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesGetBySymbol(System.String)">
+            <summary>
+Get all open trades for specific symbol in pumping mode
+</summary>
+            <param name="symbol">symbol</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesGet">
+            <summary>
+Get all open trades in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.OnlineRecordGet(System.Int32)">
+            <summary>
+Get online user in pumping mode
+</summary>
+            <param name="login">user login</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.OnlineGet">
+            <summary>
+Get online users in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UserRecordGet(System.Int32)">
+            <summary>
+Get user record in pumping mode
+</summary>
+            <param name="login">user login</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UsersGet">
+            <summary>
+Get all users in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolInfoUpdated">
+            <summary>
+Get updated prices in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.GroupRecordGet(System.String)">
+            <summary>
+Get group configuration in pumping mode
+</summary>
+            <param name="name">name of group to return</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.GroupsGet">
+            <summary>
+Get all group configurations in pumping mode
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.PumpingSwitch(P23.MetaTrader4.Manager.PumpingCallbackDelegate)">
+            <summary>
+Switch into pumping mode
+</summary>
+            <param name="callBackDelegate">delegate will be invoked on any pumping event</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.PluginUpdate(P23.MetaTrader4.Manager.Contracts.Configuration.PluginWithParameters)">
+            <summary>
+Change configuration of server plugin
+</summary>
+            <param name="plugin">plugin parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ExternalCommand(System.String,System.Int32,System.String,System.Int32)">
+            <summary>
+Send external command to regestered plugins
+</summary>
+            <param name="dataIn">input data</param>
+            <param name="sizeIn">input data size</param>
+            <param name="dataOut">output data</param>
+            <param name="sizeOut">output data size</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.DailyReportsRequest(P23.MetaTrader4.Manager.Contracts.DailyGroupRequest,System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Request daily reports for provided list of logins
+</summary>
+            <param name="request">request parameters</param>
+            <param name="logins">logins</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ReportsRequest(P23.MetaTrader4.Manager.Contracts.ReportGroupRequest,System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Request list of closed positions for provided list of logins
+</summary>
+            <param name="request">request parameters</param>
+            <param name="logins">logins</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradeCheckStops(P23.MetaTrader4.Manager.Contracts.TradeTransInfo,System.Double)">
+            <summary>
+Check the Stop Loss and Take Profit levels of an order
+</summary>
+            <param name="trade">trade parameters</param>
+            <param name="price">price</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesUserHistory(System.Int32,System.UInt32,System.UInt32)">
+            <summary>
+Request trades for specific user in period
+</summary>
+            <param name="login">account login</param>
+            <param name="from">from</param>
+            <param name="to">to</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradeRecordsRequest(System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Request list of orders for specified tickets
+</summary>
+            <param name="orders">list of tickets</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradesRequest">
+            <summary>
+Request list of all orders
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.TradeTransaction(P23.MetaTrader4.Manager.Contracts.TradeTransInfo)">
+            <summary>
+Open, close, delete, modify orders, do balance operations
+</summary>
+            <param name="info">parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.OnlineRequest">
+            <summary>
+Request list of online accounts
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UserPasswordSet(System.Int32,System.String,System.Int32,System.Int32)">
+            <summary>
+Change user password
+</summary>
+            <param name="login">login</param>
+            <param name="password">new password</param>
+            <param name="changeInvestor">flag: 0 - change trade password, 1 - change investor password</param>
+            <param name="cleanPubKey">flag: 0 - do not clean public key, 1 - clean public key</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UserPasswordCheck(System.Int32,System.String)">
+            <summary>
+Check trade password
+</summary>
+            <param name="login">login</param>
+            <param name="password">password</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UsersGroupOp(P23.MetaTrader4.Manager.Contracts.GroupCommandInfo,System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Execute group operations to lost of accounts
+</summary>
+            <param name="info">parameters</param>
+            <param name="logins">list of accounts</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UserRecordUpdate(P23.MetaTrader4.Manager.Contracts.UserRecord)">
+            <summary>
+Update account
+</summary>
+            <param name="user">account parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UserRecordNew(P23.MetaTrader4.Manager.Contracts.UserRecord)">
+            <summary>
+Create new account
+</summary>
+            <param name="user">account parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UserRecordsRequest(System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Request list of specified accounts
+</summary>
+            <param name="logins">list of logins</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.UsersRequest">
+            <summary>
+Request list of all accounts
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.JournalRequest(System.Int32,System.UInt32,System.UInt32,System.String)">
+            <summary>
+Request for the server log for a certain period of time
+</summary>
+            <param name="mode">mode</param>
+            <param name="from">from</param>
+            <param name="to">to</param>
+            <param name="filter">filter</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.NewsSend(P23.MetaTrader4.Manager.Contracts.NewsTopic)">
+            <summary>
+Publish news
+</summary>
+            <param name="news">news content</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.MailSend(P23.MetaTrader4.Manager.Contracts.MailBox,System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Send a message by the internal mailing system
+</summary>
+            <param name="mail">mail content</param>
+            <param name="logins">list of adressees</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.GroupsRequest">
+            <summary>
+Request a list of available groups of accounts
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolSendTick(System.String,System.Double,System.Double)">
+            <summary>
+Send tick to trade server
+</summary>
+            <param name="symbol">symbol</param>
+            <param name="bid">bid</param>
+            <param name="ask">ask</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolHide(System.String)">
+            <summary>
+Remove symbol from list to stop recieveing updates in pumping mode
+</summary>
+            <param name="symbol">symbol</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolAdd(System.String)">
+            <summary>
+Add symbol to list to recieve updates in pumping mode
+</summary>
+            <param name="symbol">symbol</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolInfoGet(System.String)">
+            <summary>
+Get short symbol configuration.
+</summary>
+            <param name="symbol">symbol</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolGet(System.String)">
+            <summary>
+Get symbol configuration. SymbolsRefresh should be called before this method
+</summary>
+            <param name="symbol">symbol</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolsGetAll">
+            <summary>
+Get symbols configuration. SymbolsRefresh should be called before this method
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SymbolsRefresh">
+            <summary>
+Download symbols configuration from trade server
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.AdmTradeRecordModify(P23.MetaTrader4.Manager.Contracts.TradeRecord)">
+            <summary>
+Modify order in current database
+</summary>
+            <param name="trade">trade parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.AdmTradesDelete(System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Delete orders from current database
+</summary>
+            <param name="orders">list of orders</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.AdmBalanceFix(System.Collections.Generic.IList`1{System.Int32})">
+            <summary>
+Correct balance of the accounts according to the trade history
+</summary>
+            <param name="logins">list of accounts</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.AdmTradesRequest(System.String,System.Int32)">
+            <summary>
+Request for orders from the current database
+</summary>
+            <param name="group">list of groups, accounts, or orders, separated by commas</param>
+            <param name="openOnly">0 - all, 1 - open only</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.AdmUsersRequest(System.String)">
+            <summary>
+Request for accounts from the current database
+</summary>
+            <param name="group">the list of groups or accounts separated by commas</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BackupRestoreOrders(System.Collections.Generic.IList`1{P23.MetaTrader4.Manager.Contracts.TradeRecord})">
+            <summary>
+Restore specified orders from backup
+</summary>
+            <param name="trades">orders to be restored</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BackupRestoreUsers(System.Collections.Generic.IList`1{P23.MetaTrader4.Manager.Contracts.UserRecord})">
+            <summary>
+Restore specified users from backup
+</summary>
+            <param name="users">users to be restored</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BackupRequestOrders(System.String,System.String)">
+            <summary>
+Search for orders in specified backup
+</summary>
+            <param name="file">name of backup file</param>
+            <param name="request">search string</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BackupRequestUsers(System.String,System.String)">
+            <summary>
+Search for users in specified backup
+</summary>
+            <param name="file">name of backup file</param>
+            <param name="request">search string</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BackupInfoOrders(System.Int32)">
+            <summary>
+Request for the file list of backups of the order database
+</summary>
+            <param name="mode">mode</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.BackupInfoUsers(System.Int32)">
+            <summary>
+Request for the file list of backups of the account database
+</summary>
+            <param name="mode">mode</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.PerformanceRequest(System.UInt32)">
+            <summary>
+Request performance counters from MT server
+</summary>
+            <param name="from">from</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SrvFeederLog(System.String)">
+            <summary>
+Request logs of configured data feed
+</summary>
+            <param name="name">feed name</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SrvFeeders">
+            <summary>
+Request all available on MT server data feeds
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftPlugin(System.Int32,System.Int32)">
+            <summary>
+Shift position for plugin configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftSync(System.Int32,System.Int32)">
+            <summary>
+Shift position for synchronization configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftLiveUpdate(System.Int32,System.Int32)">
+            <summary>
+Shift position for live update configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftFeeder(System.Int32,System.Int32)">
+            <summary>
+Shift position for feeder configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftManager(System.Int32,System.Int32)">
+            <summary>
+Shift position for manager configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftGroup(System.Int32,System.Int32)">
+            <summary>
+Shift position for group configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftSymbol(System.Int32,System.Int32)">
+            <summary>
+Shift position for symbol configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftHoliday(System.Int32,System.Int32)">
+            <summary>
+Shift position for holiday configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftDataServer(System.Int32,System.Int32)">
+            <summary>
+Shift position for data server configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgShiftAccess(System.Int32,System.Int32)">
+            <summary>
+Shift position for access configuration
+</summary>
+            <param name="position">position of configuration to be shifter(zero-based index)</param>
+            <param name="shift">offset from current position</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteSync(System.Int32)">
+            <summary>
+Delete synchonization configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteLiveUpdate(System.Int32)">
+            <summary>
+Delete live update configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteFeeder(System.Int32)">
+            <summary>
+Delete feeder configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteManager(System.Int32)">
+            <summary>
+Delete manager configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteGroup(System.Int32)">
+            <summary>
+Delete group configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteSymbol(System.Int32)">
+            <summary>
+Delete symbol configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteHoliday(System.Int32)">
+            <summary>
+Delete holiday configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteDataServer(System.Int32)">
+            <summary>
+Delete data server configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgDeleteAccess(System.Int32)">
+            <summary>
+Delete access configuration
+</summary>
+            <param name="position">position of configuration to be deleted(zero-based index)</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdatePlugin(P23.MetaTrader4.Manager.Contracts.Configuration.Plugin,System.Collections.Generic.IList`1{P23.MetaTrader4.Manager.Contracts.Configuration.PluginConfigurationParameter})">
+            <summary>
+Create or update plugin configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateSync(P23.MetaTrader4.Manager.Contracts.Configuration.Synchronization)">
+            <summary>
+Create or update synchronization configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateLiveUpdate(P23.MetaTrader4.Manager.Contracts.Configuration.LiveUpdate)">
+            <summary>
+Create or update live update configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateBackup(P23.MetaTrader4.Manager.Contracts.Configuration.Backup)">
+            <summary>
+Update backup configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateFeeder(P23.MetaTrader4.Manager.Contracts.Configuration.Feeder)">
+            <summary>
+Create or update feeder configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateManager(P23.MetaTrader4.Manager.Contracts.Configuration.Manager)">
+            <summary>
+Create or update manager configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateGroup(P23.MetaTrader4.Manager.Contracts.Configuration.Group)">
+            <summary>
+Create or update configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateSymbolGroup(P23.MetaTrader4.Manager.Contracts.Configuration.SymbolGroup,System.Int32)">
+            <summary>
+Create symbol group configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+            <param name="position">place where new configuration should be inserted</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateSymbol(P23.MetaTrader4.Manager.Contracts.Configuration.Symbol)">
+            <summary>
+Update or create symbol configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateHoliday(P23.MetaTrader4.Manager.Contracts.Configuration.Holiday,System.Int32)">
+            <summary>
+Create new holiday configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+            <param name="position">place where new configuration should be inserted</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateTime(P23.MetaTrader4.Manager.Contracts.Configuration.Time)">
+            <summary>
+Update time configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateDataServer(P23.MetaTrader4.Manager.Contracts.Configuration.DataServer,System.Int32)">
+            <summary>
+Create date server configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+            <param name="position">place where new configuration should be inserted</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateAccess(P23.MetaTrader4.Manager.Contracts.Configuration.Access,System.Int32)">
+            <summary>
+Create access configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+            <param name="position">place where new configuration should be inserted</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgUpdateCommon(P23.MetaTrader4.Manager.Contracts.Configuration.Common)">
+            <summary>
+Update common configuration
+</summary>
+            <param name="configuration">new configuration parameters</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestPlugin">
+            <summary>
+Request plugins configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestSync">
+            <summary>
+Request synchronizations configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestLiveUpdate">
+            <summary>
+Request live updates configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestFeeder">
+            <summary>
+Request feeders configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestManager">
+            <summary>
+Request managers configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestGroup">
+            <summary>
+Request groups configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestSymbol">
+            <summary>
+Request symbols configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestHoliday">
+            <summary>
+Request holidays configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestDataServer">
+            <summary>
+Request dataservers configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestAccess">
+            <summary>
+Request accesses configuration
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestSymbolGroup">
+            <summary>
+Request symbol group configuration section
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestBackup">
+            <summary>
+Request backup configuration section
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestTime">
+            <summary>
+Request time configuration section
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.CfgRequestCommon">
+            <summary>
+Request common configuration section
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SrvFeedsRestart">
+            <summary>
+Restart data feeds
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SrvLiveUpdateStart">
+            <summary>
+Start LiveUpdate
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SrvChartsSync">
+            <summary>
+Synchronize history data
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.SrvRestart">
+            <summary>
+Restart MT server
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ManagerRights(P23.MetaTrader4.Manager.Contracts.Configuration.Manager)">
+            <summary>
+Request manager rights for provided manager
+</summary>
+            <param name="manager">manager structure</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.PasswordChange(System.String,System.Int32)">
+            <summary>
+Change manager's password
+</summary>
+            <param name="password">new password</param>
+            <param name="isInvestor">0 - change trader's password, 1 - change investor's password</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.Ping">
+            <summary>
+Ping MT server
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.KeysSend(System.String)">
+            <summary>
+Send public key to MT server
+</summary>
+            <param name="keyPath">path to the RSA - keys file</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.LoginSecured(System.String)">
+            <summary>
+Login into MT server, using RSA key
+</summary>
+            <param name="keyPath">path to the RSA - keys file</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.Login(System.Int32,System.String)">
+            <summary>
+Login into MT server, connection must be established
+</summary>
+            <param name="login">manager's login</param>
+            <param name="password">manager's password</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.IsConnected">
+            <summary>
+Check connection to MT server
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.Disconnect">
+            <summary>
+Disconnect from MT server
+</summary>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.Connect(System.String)">
+            <summary>
+Connect to MT server
+</summary>
+            <param name="server">MT Server address(ip:port). It's recomended to user actual MT server address, not data center</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.ErrorDescription(System.Int32)">
+            <summary>
+Get error description for provided code
+</summary>
+            <param name="code">error code</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.#ctor(P23.MetaTrader4.Manager.Contracts.ConnectionParameters,System.String)">
+            <summary>
+Instantiate ClrWrapper, connection will be created
+</summary>
+            <param name="connectionParameters">parameters to connect to MT server</param>
+            <param name="metatraderLibraryPath">path to mtmanapi.dll</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.#ctor(P23.MetaTrader4.Manager.Contracts.ConnectionParameters)">
+            <summary>
+Instantiate ClrWrapper, connection will be created, mtmanapi.dll should be located in current directory
+</summary>
+            <param name="connectionParameters">parameters to connect to MT server</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.#ctor(System.String)">
+            <summary>
+Instantiate ClrWrapper, no connection will be created
+</summary>
+            <param name="metatraderLibraryPath">path to mtmanapi.dll</param>
+        </member>
+        <member name="M:P23.MetaTrader4.Manager.ClrWrapper.#ctor">
+            <summary>
+Instantiate ClrWrapper, no connection will be created, mtmanapi.dll should be located in current directory
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.MailBoxUpdated">
+            <summary>
+Event rised when mail box updated. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.NewNewsTopicUpdated">
+            <summary>
+Event rised when new news topic recieved. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.NewsTopicUpdated">
+            <summary>
+Event rised when news topic recieved. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.RequestInfoUpdated">
+            <summary>
+Event rised when request information updated. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.GroupUpdated">
+            <summary>
+Event rised when group configuration changes. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.SymbolUpdated">
+            <summary>
+Event rised when symbol configuration changes. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.UserUpdated">
+            <summary>
+Event rised when user record changes. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.OnlineUpdated">
+            <summary>
+Event rised when online users updated. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.MarginCallUpdated">
+            <summary>
+Event rised when list of accounts with the margin call state has been updated. Works only in pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.ActivationUpdated">
+            <summary>
+Event rised when new order for activation received. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.BidAskUpdated">
+            <summary>
+Event rised when new quote received. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.PumpingStopped">
+            <summary>
+Event rised when pumping stopped. Works only in pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.PumpingStarted">
+            <summary>
+Event rised when pumping started. Works only in pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.TradeDeleted">
+            <summary>
+Event rised when pending order deleted. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.TradeClosed">
+            <summary>
+Event rised when trade closed. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.TradeUpdated">
+            <summary>
+Event rised when trade changed. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="E:P23.MetaTrader4.Manager.ClrWrapper.TradeAdded">
+            <summary>
+Event rised when added new trade. Works only in extended pumping mode
+</summary>
+        </member>
+        <member name="T:P23.MetaTrader4.Manager.ClrWrapper">
+            <summary>
+Wrapper around mtmanapi.dll to provede managed access to MT4 manager API
+</summary>
+        </member>
+    </members>
+</doc>
