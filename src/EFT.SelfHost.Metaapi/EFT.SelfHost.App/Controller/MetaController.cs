@@ -10,6 +10,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Results;
+using System.Web;
+using EFT.Meta.SelfHost.Api.Models;
 
 namespace EFT.Meta.SelfHost.Api
 {
@@ -17,16 +19,50 @@ namespace EFT.Meta.SelfHost.Api
     public class MetaController : ApiController
     {
         [Authorize]
-        public async Task<IEnumerable<MetaAccount>> GetMetaAccountList()
+        [Route("GetMetaAccountList")]
+        [HttpPost]
+        public async Task<IHttpActionResult> GetMetaAccountList(MetaAccountModel model)
         {
             using (var scope = MetaContainer.MetaContainer.Initialize().BeginLifetimeScope())
             {
                 var metaService = scope.Resolve<IMetaService>();
 
-                var metaAccounts = await Task.FromResult<List<MetaAccount>>(metaService.GetMetaAccountList("bora.ergul@live.com"));
+                var metaAccounts = await Task.FromResult<List<MetaAccount>>(metaService.GetMetaAccountList(model.Email));
 
-                return metaAccounts;
+                return Json(metaAccounts);
             }
         }
+
+        [Authorize]
+        [Route("MoneyTransaction")]
+        [HttpPost]
+        public async Task<IHttpActionResult> MoneyTransaction(MetaTransaction model)
+        {
+            using (var scope = MetaContainer.MetaContainer.Initialize().BeginLifetimeScope())
+            {   
+                var metaService = scope.Resolve<IMetaService>();
+
+                var result = await Task.FromResult<ReturnStatus>(metaService.EFTTransaction(model));
+
+                return Json(result);
+            }
+        }
+
+        [Authorize]
+        [Route("GetMetaPersonalDetail")]
+        [HttpPost]
+        public async Task<IHttpActionResult> GetMetaPersonalDetail(MetaPersonalDetailModel model)
+        {
+            using (var scope = MetaContainer.MetaContainer.Initialize().BeginLifetimeScope())
+            {
+                var metaService = scope.Resolve<IMetaService>();
+
+                var result = await Task.FromResult<MetaPersonalDetail>(metaService.GetMetaPersonalDetail(int.Parse(model.AccountNo)));
+
+                return Json(result);
+            }
+        }
+
+
     }
 }

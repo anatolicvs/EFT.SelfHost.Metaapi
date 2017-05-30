@@ -164,6 +164,9 @@
     <Reference Include="P23.MetaTrader4.Manager.Contracts, Version=0.4.6337.32332, Culture=neutral, PublicKeyToken=e18a7b3c29f2577c, processorArchitecture=MSIL">
       <HintPath>..\packages\MetaTrader4.Manager.Contracts.0.4.6337.32332\lib\P23.MetaTrader4.Manager.Contracts.dll</HintPath>
     </Reference>
+    <Reference Include="Swashbuckle.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=cd1bb07a5ac7c7bc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Swashbuckle.Core.5.5.3\lib\net40\Swashbuckle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.Annotations, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\System.ComponentModel.Annotations.4.3.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
@@ -211,6 +214,9 @@
     <Reference Include="System.Web.Http.Owin, Version=5.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.3\lib\net45\System.Web.Http.Owin.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Mvc, Version=5.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Mvc.5.1.0\lib\net45\System.Web.Mvc.dll</HintPath>
     </Reference>
@@ -234,11 +240,15 @@
     <Reference Include="Topshelf, Version=3.2.150.0, Culture=neutral, PublicKeyToken=b800c4cfcdeea87b, processorArchitecture=MSIL">
       <HintPath>..\packages\Topshelf.3.2.0\lib\net40-full\Topshelf.dll</HintPath>
     </Reference>
+    <Reference Include="WebActivatorEx, Version=2.0.0.0, Culture=neutral, PublicKeyToken=7b26dc2a43f6a0d4, processorArchitecture=MSIL">
+      <HintPath>..\packages\WebActivatorEx.2.0\lib\net40\WebActivatorEx.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationIdentityContext.cs" />
     <Compile Include="ApplicationRoleManager.cs" />
     <Compile Include="ApplicationUserManager.cs" />
+    <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="AuthRepository.cs" />
     <Compile Include="Controller\AccountController.cs" />
     <Compile Include="Controller\RefreshTokensController.cs" />
@@ -253,6 +263,8 @@
     <Compile Include="MetaContainer\MetaContainer.cs" />
     <Compile Include="Controller\MetaController.cs" />
     <Compile Include="Models\Enums.cs" />
+    <Compile Include="Models\MetaAccountModel.cs" />
+    <Compile Include="Models\MetaPersonalDetailModel.cs" />
     <Compile Include="Models\UserModel.cs" />
     <Compile Include="MongoContext.cs" />
     <Compile Include="NancyDemo.cs" />
@@ -278,6 +290,7 @@
     <None Include="config.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Include="EFT.Meta.SelfHost.Api.nuspec" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -309,7 +322,9 @@
       <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\MetaTrader4.Manager.Wrapper.0.4.6337.32332\build\MetaTrader4.Manager.Wrapper.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MetaTrader4.Manager.Wrapper.0.4.6337.32332\build\MetaTrader4.Manager.Wrapper.targets'))" />
+    <Error Condition="!Exists('..\packages\OctoPack.3.6.1\build\OctoPack.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\OctoPack.3.6.1\build\OctoPack.targets'))" />
   </Target>
+  <Import Project="..\packages\OctoPack.3.6.1\build\OctoPack.targets" Condition="Exists('..\packages\OctoPack.3.6.1\build\OctoPack.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

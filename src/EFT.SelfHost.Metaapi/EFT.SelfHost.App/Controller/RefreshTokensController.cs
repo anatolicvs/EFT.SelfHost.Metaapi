@@ -13,7 +13,7 @@
             this.authRepository = authRepository;
         }
 
-        [Authorize(Users = "Admin")]
+        //[Authorize(Users = "Admin")]
         [Route("")]
         public IHttpActionResult Get()
         {

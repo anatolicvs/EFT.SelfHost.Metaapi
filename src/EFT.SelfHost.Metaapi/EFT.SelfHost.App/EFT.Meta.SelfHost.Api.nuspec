@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
+    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/aytacozkan/aytacozkan.github.io/master/images/eft-100x100.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>EFT.Meta.SelfHost.Api base project. This project has included MetaTrader.dll that requires x86 archtecture and .Net Framework 4.6.2</releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>EFT.Meta.SelfHost.Api EFT</tags>
+  </metadata>
+</package>

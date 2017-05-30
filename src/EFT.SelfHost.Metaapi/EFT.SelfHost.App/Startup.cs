@@ -16,7 +16,6 @@ using EFT.Meta.SelfHost.Api.Entities;
 using EFT.Meta.SelfHost.Api.Providers;
 using Microsoft.Owin.Security.OAuth;
 using Microsoft.Owin.Security.Infrastructure;
-
 namespace EFT.Meta.SelfHost.Api
 {
     public class Startup
@@ -62,6 +61,12 @@ namespace EFT.Meta.SelfHost.Api
             config.DependencyResolver = webApiDependencyResolver;
 
             config.Routes.MapHttpRoute(
+                    name: "ControllerAndAction",
+                routeTemplate: "api/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional, extension = RouteParameter.Optional }
+            );
+
+            config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
@@ -79,7 +84,7 @@ namespace EFT.Meta.SelfHost.Api
             {
                 EnableDirectoryBrowsing = true,
                 EnableDefaultFiles = true,
-                DefaultFilesOptions = { DefaultFileNames = {"index.html"}},
+                DefaultFilesOptions = { DefaultFileNames = { "index.html" } },
                 FileSystem = new PhysicalFileSystem("Assets"),
                 StaticFileOptions = { ContentTypeProvider = new CustomContentTypeProvider() }
             };
@@ -87,6 +92,7 @@ namespace EFT.Meta.SelfHost.Api
             app.UseFileServer(options);
 
             app.UseNancy();
+
 
             InitializeData(container);
         }
