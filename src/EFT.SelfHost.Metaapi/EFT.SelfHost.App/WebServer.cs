@@ -13,7 +13,7 @@ namespace EFT.Meta.SelfHost.Api
 
         public void Start()
         {
-            _webapp = WebApp.Start<Startup>("http://localhost:8686");
+            _webapp = WebApp.Start<Startup>("http://35.166.137.107:8686");
         }
 
         public void Stop()
