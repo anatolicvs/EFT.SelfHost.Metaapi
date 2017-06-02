@@ -9,6 +9,7 @@
 
     public class SimpleAuthorizationServerProvider : OAuthAuthorizationServerProvider
     {
+        public static NLog.Logger logger = NLog.LogManager.GetCurrentClassLogger();
         private readonly AuthRepository authRepository;
 
         public SimpleAuthorizationServerProvider(AuthRepository authRepository)
@@ -43,7 +44,7 @@
             if (client == null)
             {
                 context.SetError("invalid_clientId", string.Format("Client '{0}' is not registered in the system.", context.ClientId));
-
+                logger.Info($"Client '{context.ClientId}' is not registered in the system.");
                 return Task.FromResult<object>(null);
             }
 
@@ -52,7 +53,7 @@
                 if (string.IsNullOrWhiteSpace(clientSecret))
                 {
                     context.SetError("invalid_clientId", "Client secret should be sent.");
-
+                    logger.Info("Client secret should be sent.");
                     return Task.FromResult<object>(null);
                 }
                 else
@@ -60,7 +61,7 @@
                     if (client.Secret != Helper.GetHash(clientSecret))
                     {
                         context.SetError("invalid_clientId", "Client secret is invalid.");
-
+                        logger.Info("Client secret is invalid.");
                         return Task.FromResult<object>(null);
                     }
                 }
@@ -69,7 +70,7 @@
             if (!client.Active)
             {
                 context.SetError("invalid_clientId", "Client is inactive.");
-
+                logger.Info("Client is inactive.");
                 return Task.FromResult<object>(null);
             }
 
@@ -94,6 +95,7 @@
             if (user == null)
             {
                 context.SetError("invalid_grant", "The user name or password is incorrect.");
+                logger.Fatal("The user name or password is incorrect.");
                 return;
             }
 
@@ -126,7 +128,7 @@
             if (originalClient != currentClient)
             {
                 context.SetError("invalid_clientId", "Refresh token is issued to a different clientId.");
-
+                logger.Fatal("Refresh token is issued to a different clientId.");
                 return Task.FromResult<object>(null);
             }
 

@@ -11,5 +11,6 @@ namespace EFT.Meta.SelfService
         List<MetaAccount> GetMetaAccountList(string Username);
         MetaPersonalDetail GetMetaPersonalDetail(int loginId);
         ReturnStatus EFTTransaction(MetaTransaction trans);
+        ReturnStatus AddDeposit(MetaDepositModel model); 
     }
 }

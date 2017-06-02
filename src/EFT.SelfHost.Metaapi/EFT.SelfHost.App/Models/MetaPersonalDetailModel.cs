@@ -9,5 +9,6 @@ namespace EFT.Meta.SelfHost.Api.Models
     public class MetaPersonalDetailModel
     {
         public string AccountNo { get; set; }
+        public string Url { get; set; }
     }
 }

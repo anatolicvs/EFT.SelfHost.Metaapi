@@ -26,6 +26,41 @@ namespace EFT.Meta.SelfService
             _metaTransactionRepository = metaTransactionRepository;
             _logger = new LogService(NLog.LogManager.GetCurrentClassLogger());
         }
+
+        public ReturnStatus AddDeposit(MetaDepositModel model)
+        {
+            try
+            {
+                var status = new ReturnStatus();
+                using (var scope = _metaContainer.BeginLifetimeScope())
+                {
+                    var meta = scope.Resolve<IMetaClient>();
+
+                    using (var transactionScope = new TransactionScope())
+                    {
+                        TradeTransInfo tinfo = new TradeTransInfo();
+                        tinfo.Type = TradeTransactionType.BrBalance;
+                        tinfo.Cmd = TradeCommand.Balance;
+                        tinfo.OrderBy = int.Parse(model.ToAccount);
+                        tinfo.Price = model.Amount;
+                        tinfo.Comment = $"To {model.ToAccount} / {tinfo.Price} by Web";
+                        _logger.Info(tinfo.Comment);
+
+                        status.Code = meta.Client.TradeTransaction(tinfo);
+                        status.Status = meta.Client.ErrorDescription(status.Code);
+                        transactionScope.Complete();
+                        return status;
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+
+                _logger.Error(e);
+                return null;
+            }
+        }
+
         /// <summary>
         /// (+) or (-) Deposit or Witdraw Method.
         /// </summary>
@@ -138,7 +173,7 @@ namespace EFT.Meta.SelfService
                         {
                             MetaAccount account = new MetaAccount();
                             account.AccountNo = user.Login;
-                            account.AccountState = user.Enable == 0 ? "Active" : "Pasive";
+                            account.AccountState = user.Enable == 1 ? "Active" : "Pasive";
                             account.AccountType = user.Status;
                             account.Balance = user.Balance;
                             account.Currency = "USD";

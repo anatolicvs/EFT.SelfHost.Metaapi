@@ -48,6 +48,7 @@
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Nancy.Owin.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Newtonsoft.Json.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\NHibernate.dll
+\\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\NLog.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Owin.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\P23.MetaTrader4.Manager.ClrWrapper.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\P23.MetaTrader4.Manager.Contracts.dll
@@ -71,7 +72,6 @@
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\System.Web.WebPages.Razor.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Topshelf.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\WebActivatorEx.dll
-\\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\NLog.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\EFT.Infrastructure.dll
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\EFT.Meta.Service.pdb
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\EFT.Meta.Service.dll.config
@@ -113,6 +113,7 @@
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Nancy.Owin.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\Newtonsoft.Json.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\NHibernate.xml
+\\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\NLog.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\P23.MetaTrader4.Manager.ClrWrapper.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\P23.MetaTrader4.Manager.Contracts.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\System.Net.Http.xml
@@ -126,7 +127,6 @@
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\System.Web.WebPages.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\System.Web.WebPages.Deployment.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\System.Web.WebPages.Razor.xml
-\\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\NLog.xml
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\bin\Debug\EFT.Infrastructure.pdb
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\obj\Debug\EFT.Meta.SelfHost.Api.csprojResolveAssemblyReference.cache
 \\Mac\Google Drive\eft.works\EFT.SelfHost.Metaapi\src\EFT.SelfHost.Metaapi\EFT.SelfHost.App\obj\Debug\EFT.Meta.SelfHost.Api.exe

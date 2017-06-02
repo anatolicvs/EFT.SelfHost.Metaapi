@@ -57,6 +57,7 @@ namespace EFT.Meta.SelfHost.Api
             {
                 var metaService = scope.Resolve<IMetaService>();
 
+
                 var result = await Task.FromResult<MetaPersonalDetail>(metaService.GetMetaPersonalDetail(int.Parse(model.AccountNo)));
 
                 return Json(result);

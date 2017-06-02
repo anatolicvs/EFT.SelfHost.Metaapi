@@ -1,18 +1,21 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>$id$</id>
+    <id>EFT.Meta.SelfHost.Api</id>
     <version>$version$</version>
-    <title>$title$</title>
-    <authors>$author$</authors>
-    <owners>$author$</owners>
-    <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
+    <title>EFT.Meta.SelfHost.Api</title>
+    <authors>EFT Software Inc.</authors>
+    <owners>EFT Software Inc all rights reserved.</owners>
+    <licenseUrl>https://www.eftsoftware.com/</licenseUrl>
+    <projectUrl>https://github.com/aytacozkan/EFT.SelfHost.Metaapi</projectUrl>
     <iconUrl>https://raw.githubusercontent.com/aytacozkan/aytacozkan.github.io/master/images/eft-100x100.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>$description$</description>
-    <releaseNotes>EFT.Meta.SelfHost.Api base project. This project has included MetaTrader.dll that requires x86 archtecture and .Net Framework 4.6.2</releaseNotes>
+    <description>EFT Clearpoint Esube</description>
+    <releaseNotes>EFT.Clearpoint.Esube Project.</releaseNotes>
     <copyright>Copyright 2017</copyright>
-    <tags>EFT.Meta.SelfHost.Api EFT</tags>
+    <tags>EFT.Meta.SelfHost.Api</tags>
   </metadata>
+  <files>
+    <file src="bin\*.dll" target="bin" />
+  </files>
 </package>

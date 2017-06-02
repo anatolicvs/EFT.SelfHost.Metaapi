@@ -22,9 +22,8 @@ namespace EFT.Meta.SelfHost.Api
                     s.WhenStarted(tc => tc.Start());
                     s.WhenStopped(tc => tc.Stop());
                 });
-                x.RunAsLocalSystem();
 
-                x.SetDescription("This is a demo of a Windows Service using Topshelf.");
+                x.RunAsLocalSystem();
                 x.SetDisplayName("Self Host Meta Trader Api.");
                 x.SetServiceName("EFT.Selfhost.App");
             });
